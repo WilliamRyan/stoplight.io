@@ -80,7 +80,7 @@ pricingSection:
   cards:
     - icon: ['fad', 'user-check']
       title: "Standard"
-      tag: "$179 / month"
+      tag: "$149 / month"
       buttonText: "Free Trial. No CC Required."
       href: "https://next.stoplight.io"
       features: ['OpenAPI v2 & v3', 'HTTP Request Maker', 'Unlimited Published Pages']

@@ -1,15 +1,15 @@
 # path: /pricing
 color: blue
 hero:
-  skew: '-7deg'
+  skew: "-7deg"
   subtitle: >-
     All plans include the entire Stoplight platform: API Modeling, Testing,
     Mocking, and Basic Documentation
-  title: 'Simple, Flexible Pricing'
+  title: "Simple, Flexible Pricing"
 plans:
   - button:
       color: green
-      href: 'https://next.stoplight.io/join'
+      href: "https://next.stoplight.io/join"
       title: Start Free Trial
     description: For open source and individual use.
     features:
@@ -18,7 +18,7 @@ plans:
     title: Personal
   - button:
       color: green
-      href: 'https://next.stoplight.io/join'
+      href: "https://next.stoplight.io/join"
       title: Start Free Trial
     description: For small teams and startups.
     features:
@@ -48,7 +48,7 @@ plans:
     title: Enterprise
 docPlans:
   buttonText: Create Your Free Documentation Hub
-  buttonUrl: 'https://next.stoplight.io/join'
+  buttonUrl: "https://next.stoplight.io/join"
   description: >-
     Combine OpenAPI with Markdown to create robust documentation for internal
     and external stakeholders. One click publish to host with Stoplight or
@@ -59,7 +59,7 @@ docPlans:
         - Standard
         - Pro
         - Enterprise
-      title: 'OpenAPI, Markdown, Request Maker'
+      title: "OpenAPI, Markdown, Request Maker"
     - plans:
         - Basic
         - Standard
@@ -125,16 +125,16 @@ docPlans:
   plans:
     - price: Free
       title: Basic
-    - domains: '1 Domain'
-      price: $69 / mo
+    - domains: "1 Domain"
+      price: $149 / mo
       title: Standard
-    - domains: '10 Domains'
-      price: $159 / mo
+    - domains: "10 Domains"
+      price: $399 / mo
       title: Pro
-    - domains: 'Unlimited Domains'
+    - domains: "Unlimited Domains"
       price: Contact Us
       title: Enterprise
-      link: '/enterprise-contact/'
+      link: "/enterprise-contact/"
   title: Documentation Add-On
 meta:
   description: >-
@@ -144,4 +144,4 @@ meta:
   title: Our Pricing Plans | Stoplight
   twitter:
     title: Our Pricing Plans | Stoplight
-    username: '@stoplightio'
+    username: "@stoplightio"
