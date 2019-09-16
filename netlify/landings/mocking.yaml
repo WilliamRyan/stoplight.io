@@ -31,7 +31,7 @@ featureSection:
     the fly based on your OpenAPI v2/v3 document (formerly known as Swagger).
   features:
     - description: >-
-        Supercharge any OpenAPI document with [Stoplight Studio](/studio/). Once you
+        Supercharge any OpenAPI document with [Stoplight Studio](/studio/)'s Mock REST API server. Once you
         have created or imported your OpenAPI document, you have access to
         an instant mock server, which automatically reloads when your
         document changes. A mock API simulates the behavior of a real API

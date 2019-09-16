@@ -41,7 +41,7 @@ Stoplight provides API design tools for anyone building enterprise APIs. Use the
 
 ## Collaborative API Design
 
-With Stoplight’s enterprise API Design tool, organizations can collaboratively build APIs. API mocking, powered by Prism, allows backend and frontend engineerings teams to work in tandem building APIs, increasing efficiency and saving valuable engineering time. Auto-generated documentation allows you to share your API prototype in human-readable format. Discussions allow members within your organization to comment on API designs and documentation, increasing organization-wide communication.
+With Stoplight’s enterprise API Architect & Design tool, organizations can collaboratively build APIs. API mocking, powered by Prism, allows backend and frontend engineerings teams to work in tandem building APIs, increasing efficiency and saving valuable engineering time. Auto-generated documentation allows you to share your API prototype in human-readable format. Discussions allow members within your organization to comment on API designs and documentation, increasing organization-wide communication.
 
 Shared models and properties reduce duplication and promote reuse of data models within an organization. Custom style and validation rules give you control over API governance to make sure your API designs match your organizations own unique API style guides.
 

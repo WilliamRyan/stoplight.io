@@ -27,7 +27,7 @@ featureSection:
     enabled: true
     text: Ready to Start Designing APIs?
   description: >-
-    Start designing your API in minutes. Use the [OpenAPI
+    Start designing API in minutes using Stoplight's API design tool. Use the [OpenAPI
     Specification](/api-design-guide/openapi) (formerly known as Swagger) with
     Stoplight’s visual editor to [design consistent and standardized REST
     APIs](/design/web/) for your organization. Without writing any code, model

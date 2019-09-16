@@ -31,7 +31,7 @@ meta:
 
 Mocking your API with Stoplight is your API design’s perfect companion. With Stoplight, you can have instant, hosted mock servers, powered by Prism, for your API as soon as you start the design. Don’t wait until you’ve written hundreds of lines of code and potentially wasted engineering resources to try out your API, start early on with mocking.
 
-Stoplight provides REST API mock servers based on your OpenAPI Specification (formerly known as Swagger) document. Don’t worry about where to host the server, uptime, or updating it while you make changes to your API. Stoplight does this all for you. Need your mock servers to run on your own hardware? No problem! Stoplight provides multiple ways to run our Prism powered mock servers.
+Stoplight provides REST API mock servers based on your OpenAPI Specification (formerly known as Swagger) document. Don’t worry about where to host the server, uptime, or updating it while you make changes to your API. Stoplight does this all for you. Need your API mock servers to run on your own hardware? No problem! Stoplight provides multiple ways to run our Prism powered mock servers & services.
 
 ## Service Virtualization
 

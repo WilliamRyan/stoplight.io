@@ -34,7 +34,7 @@ meta:
 
 The major requirement of a mock API server is to generate the data to send as responses. Ideally, the data is realistic, because you want to make the experience as close to a real API as you can. However, an overly complex effort to build a mock API may negate its purpose. In the cases where the real API is available, the mock API is meant to unblock projects that depend on the API, not become a project itself.
 
-When generating mock data, you can use static responses or fully randomized fields. Depending on how you generate the dummy data, you may also be able to find a middle ground of mostly static content with some fields dynamically generated.
+When generating mock data, you can use static responses or fully randomized fields. Depending on how you create basic or advanced RES API mock data, you may also be able to find a middle ground of mostly static content with some fields dynamically generated.
 
 ### Dummy Server with Manual Data
 

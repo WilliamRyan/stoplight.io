@@ -45,7 +45,7 @@ Publishing and maintaining API documentation is critical to your APIs’ adoptio
 
 ## Automatic REST API Documentation
 
-Upload your specification into Stoplight and publish documentation instantly. Utilize Stoplight’s documentation tool to publish your specification directly into a new or existing website. Publish reference material and any other supplemental information as you see fit.
+Upload your specification into Stoplight and publish documentation instantly. Utilize Stoplight’s automatic REST api documentation tool to publish your specification directly into a new or existing website. Publish reference material and any other supplemental information as you see fit.
 
 ## Supplementary & Auxiliary Documentation
 

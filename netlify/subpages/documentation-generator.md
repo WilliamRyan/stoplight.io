@@ -32,7 +32,7 @@ meta:
     username: '@stoplightio'
 ---
 
-Stoplight’s Documentation tool makes it easy to generate API documentation directly from your API specification. Upload your spec and voila! Generate API docs from an existing specification and publish them online immediately.
+Stoplight’s online API Documentation generator tool makes it easy to generate API documentation directly from your API specification. Upload your spec and voila! Generate API docs from an existing specification and publish them online immediately using our API docs tool.
 
 ## Power a Page
 

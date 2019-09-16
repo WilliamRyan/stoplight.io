@@ -32,7 +32,7 @@ meta:
 
 ## Writing Good API Documentation Guides
 
-Your API reference helps new developers see what’s possible. Later, they’ll return to remind themselves of syntax or specific functionality. In between, you’ll need documentation that helps them achieve common tasks with your API. These guides are less about describing functionality and more about defining use cases. They include context that helps developers understand _why_ and _how_ in addition to the _what_ of a reference.
+Your API reference helps new developers see what’s possible. Later, they’ll return to remind themselves of syntax or specific functionality. In between, you’ll need documentation that helps them achieve common tasks with your API. These guides are less about describing functionality and more about defining use cases. Writing good API documentation guides that helps developers understand _why_ and _how_ in addition to the _what_ of a reference.
 
 Many developers will look for a tutorial before diving deep into your list of endpoints. The most important page of your documentation is the _Getting Started_ guide. You can think of this as a Hello World that also takes them into an area of your API that shows them the benefits of integration. Often, your getting started guide will include your API’s most common use case.
 

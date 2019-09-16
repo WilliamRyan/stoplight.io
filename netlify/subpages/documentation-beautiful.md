@@ -28,7 +28,7 @@ meta:
     username: '@stoplightio'
 ---
 
-# Beautiful API Documentation
+## Generate Beautiful OpenAPI Documentation
 
 Well-designed, beautiful documentation can subtly influence the way they are consumed. Design is important in all things but is particularly vital for objects of great complexity with a steep learning curve. Aesthetically pleasing, beautiful design has proven to influence the way users consume your documentation by increasing its perceived value and usefulness and diminishing the learning curve.
 

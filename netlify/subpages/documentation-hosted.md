@@ -33,7 +33,7 @@ meta:
     username: '@stoplightio'
 ---
 
-# Hosted API Documentation
+## Hosted API Documentation tool
 
 Stoplight provides a number of different options for hosting documentation and a flexible set of integrations and authorizations to fulfill all major use cases.
 

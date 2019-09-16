@@ -45,7 +45,7 @@ meta:
     username: '@stoplightio'
 ---
 
-# API Design Brings Powerful Tooling
+## Why API Design Brings Powerful Tooling
 
 When you use an OpenAPI spec to design your API, it becomes part of your workflow. That means as soon as you have even a single potential endpoint of your API described, you can begin to gather feedback and piece together how your API will be used. Rather than toiling away in an API silo, your spec allows for collaboration with colleagues and across departments. You can work the API description into your approval processes, so everyone is on the same page with its progress.
 

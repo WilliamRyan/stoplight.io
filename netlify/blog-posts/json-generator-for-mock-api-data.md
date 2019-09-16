@@ -31,7 +31,7 @@ meta:
     image: /images/mock-car.jpg
 ---
 
-With so many APIs using JSON responses, it’s become the common format to express data. It’s has a simple syntax, is human-readable, and can be efficiently parsed in modern languages. Typically, JSON is generated from existing data structures and databases. Yet, when sharing examples, [mocking APIs](https://stoplight.io/mocking/), or building documentation, you may find yourself creating a lot of JSON by hand. That’s when you’ll wish you could generate the data automatically.
+With so many APIs using JSON responses, it’s become the common format to express data. It’s has a simple syntax, is human-readable, and can be efficiently parsed in modern languages. Typically, JSON is generated from existing data structures and databases. Yet, when sharing examples, [mocking APIs](https://stoplight.io/mocking/), or building documentation, you may find yourself creating a lot of JSON by hand. That’s when you’ll wish you could generate the data automatically using Dummy and Mock JSON API generators.
 
 ## Why Create Dummy JSON Data?
 

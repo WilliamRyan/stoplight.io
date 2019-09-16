@@ -13,7 +13,7 @@ hero:
     src: /images/testing_header.png
   subtitle: >-
     Build reliable web APIs with fully customizable tests and robust test
-    coverage based on your API contracts. Test your endpoints, status codes, and
+    coverage based on your API contracts. Use our automated REST API testing tool to review and test your endpoints, status codes, and
     more.
   title: OpenAPI Testing
 featureSection:

@@ -40,7 +40,7 @@ meta:
     username: '@stoplightio'
 ---
 
-# Understanding OpenAPI
+## What is OpenAPI used for?
 
 The industry has selected OpenAPI as the way forward, so let’s understand it. From a technical standpoint, it is a YAML or JSON file that follows a specific [document structure](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#documentStructure). You should be able to describe any REST API using a document that adheres to the OpenAPI v3 schema.
 

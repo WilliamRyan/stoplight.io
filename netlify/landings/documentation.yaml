@@ -8,7 +8,7 @@ hero:
     alt: Documentation
     src: /images/hubs/hero.png
   subtitle: >-
-    Create beautiful, customizable, interactive API documentation generated from
+    Create beautiful, customizable, interactive hosted API documentation generated from
     your OpenAPI Specification
   title: Hosted API Documentation
   ctas:
@@ -31,7 +31,7 @@ featureSection:
     enabled: true
     text: Ready to Publish?
   description: >-
-    Create API documentation in minutes. Combine OpenAPI descriptions
+    Create API documentation in minutes using our REST API documentation generator tool. Combine OpenAPI descriptions
     (formerly known as Swagger) with Markdown to create robust, searchable,
     internal and external [API documentation](/api-documentation-guide/basics/)
     for your organization. One-click cloud deployment with Stoplight or download

@@ -38,7 +38,7 @@ meta:
 
 ## Design APIs with OpenAPI Specification
 
-Stoplight provides free API design tooling for anyone building REST APIs. Describe your RESTful API architecture design using the OpenAPI Specification (formerly known as Swagger) and Stoplight’s visual editor. Stoplight’s tooling makes your OpenAPI Specification the single source of truth within your organization, which enables you to build consistent and standardized APIs across your organization. Describe endpoints, headers, bodies, multiple responses, query string parameters, shared models, and much more.
+Stoplight provides [free API design tooling](https://stoplight.io/studio/) for anyone building REST APIs. Describe your RESTful API architecture design using the OpenAPI Specification (formerly known as Swagger) and Stoplight’s visual editor. Stoplight’s tooling makes your OpenAPI Specification the single source of truth within your organization, which enables you to build consistent and standardized APIs across your organization. Describe endpoints, headers, bodies, multiple responses, query string parameters, shared models, and much more.
 
 ## Visual API Design
 
