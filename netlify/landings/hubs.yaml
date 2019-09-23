@@ -93,10 +93,10 @@ pricingSection:
       buttonText: "Free Trial. No CC Required."
       featuresTitle: "All Standard features plus:"
       features: [
-        'Custom Branding',
-        'Custom Domains',
-        'Build History & Instant Rollbacks',
+        'Custom CSS',
         'Username/Password Login Page',
+        'Analytics Integrations',
+        'Priority Support',
       ]
 
     - isDark: true
