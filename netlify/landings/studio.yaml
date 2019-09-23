@@ -17,17 +17,17 @@ hero:
       icon: ['fad', 'browser']
       color: purple
     - title: Mac App
-      href: 'https://github.com/stoplightio/studio/releases/download/v1.1.1/Stoplight-Studio-1.1.1.dmg'
+      href: 'https://github.com/stoplightio/studio/releases/download/v1.1.2/Stoplight-Studio-1.1.2.dmg'
       icon: ['fab', 'apple']
       color: green
       filename: studio-mac
     - title: Windows App
-      href: 'https://github.com/stoplightio/studio/releases/download/v1.1.1/Stoplight-Studio-Setup-1.1.1.exe'
+      href: 'https://github.com/stoplightio/studio/releases/download/v1.1.2/Stoplight-Studio-Setup-1.1.2.exe'
       icon: ['fab', 'windows']
       color: green
       filename: studio-windows
     - title: Linux App
-      href: 'https://github.com/stoplightio/studio/releases/download/v1.1.1/Stoplight-Studio-1.1.1.AppImage'
+      href: 'https://github.com/stoplightio/studio/releases/download/v1.1.2/Stoplight-Studio-1.1.2.AppImage'
       icon: ['fab', 'linux']
       color: green
       filename: studio-linux
@@ -39,17 +39,17 @@ featureSection:
         icon: ['fad', 'browser']
         color: purple
       - title: Mac App
-        href: 'https://github.com/stoplightio/studio/releases/download/v1.1.1/Stoplight-Studio-1.1.1.dmg'
+        href: 'https://github.com/stoplightio/studio/releases/download/v1.1.2/Stoplight-Studio-1.1.2.dmg'
         icon: ['fab', 'apple']
         color: green
         filename: studio-mac
       - title: Windows App
-        href: 'https://github.com/stoplightio/studio/releases/download/v1.1.1/Stoplight-Studio-Setup-1.1.1.exe'
+        href: 'https://github.com/stoplightio/studio/releases/download/v1.1.2/Stoplight-Studio-Setup-1.1.2.exe'
         icon: ['fab', 'windows']
         color: green
         filename: studio-windows
       - title: Linux App
-        href: 'https://github.com/stoplightio/studio/releases/download/v1.1.1/Stoplight-Studio-1.1.1.AppImage'
+        href: 'https://github.com/stoplightio/studio/releases/download/v1.1.2/Stoplight-Studio-1.1.2.AppImage'
         icon: ['fab', 'linux']
         color: green
         filename: studio-linux
