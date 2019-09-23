@@ -83,7 +83,7 @@ pricingSection:
       tag: "$149 / month"
       buttonText: "Free Trial. No CC Required."
       href: "https://next.stoplight.io"
-      features: ['OpenAPI v2 & v3', 'HTTP Request Maker', 'Unlimited Published Pages']
+      features: ['Custom Domains', 'Basic Theming', 'Build History & Instant Rollbacks']
 
     - isDark: true
       icon: ['fad', 'user-friends']
