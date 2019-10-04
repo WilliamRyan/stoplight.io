@@ -31,11 +31,12 @@ featureSection:
     the fly based on your OpenAPI v2/v3 document (formerly known as Swagger).
   features:
     - description: >-
-        Supercharge any OpenAPI document with [Stoplight Studio](/studio/)'s Mock REST API server. Once you
-        have created or imported your OpenAPI document, you have access to
-        an instant mock server, which automatically reloads when your
-        document changes. A mock API simulates the behavior of a real API
-        allowing collaboration and feedback on your API design.
+        Supercharge any OpenAPI Specification with [Stoplight Studio](/studio/) 
+        using our online Mock REST API server. Once you have created or imported 
+        your OpenAPI document, you have access to an instant mock server, which
+        automatically reloads when your document changes. A mock API simulates 
+        the behavior of a real API allowing collaboration and feedback on your
+        API design.
       image: /images/mocking_instant.png
       shortName: Instant Mocking
       title: Instant Mock Server

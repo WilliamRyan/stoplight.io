@@ -38,7 +38,7 @@ meta:
 
 ## Testing APIs with OpenAPI Specification
 
-Stoplight provides API integration testing tools for anyone building web APIs. Integration testing can come in a lot of forms. We focus on integration tests between API providers and consumers that expect that providers will return a pre-defined response based on a contract. With Stoplight, the contract is your OpenAPI Specification (formerly known as Swagger) document.
+Stoplight provides API integration testing tools for anyone building web APIs. API integration testing can come in a lot of forms. We focus on integration tests between API providers and consumers that expect that providers will return a pre-defined response based on a contract. With Stoplight, the contract is your OpenAPI Specification (formerly known as Swagger) document.
 
 We also call this “contract testing.” Contract testing is writing tests that ensure the API implementation meets the standards and definitions described in a contract. Does your API response contain all the required properties? Are you getting the correct status code for certain requests? Stoplight provides a full testing suite built for contract testing and much more.
 

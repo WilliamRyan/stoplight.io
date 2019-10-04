@@ -34,7 +34,7 @@ meta:
 
 ## Test REST APIs with OpenAPI Specification
 
-Stoplight provides API testing tools for anyone building APIs for enterprise organizations. Our tools can make your OpenAPI Specification (formerly known as Swagger) the Single Source of Truth within your organization. It has become increasingly important to develop highly flexible, performant, and powerful testing roadmaps to catch bugs faster and rapidly iterate in the API development process. Stoplight enables teams to do Contract Testing with the OpenAPI Specification, tests that ensure the API implementation meets the standards and definitions described in a contract or specification, throughout the development process.
+Stoplight provides free API testing tools for anyone building APIs for enterprise organizations. Our tools can make your OpenAPI Specification (formerly known as Swagger) the Single Source of Truth within your organization. It has become increasingly important to develop highly flexible, performant, and powerful testing roadmaps to catch bugs faster and rapidly iterate in the API development process. Stoplight enables teams to do Contract Testing with the OpenAPI Specification, tests that ensure the API implementation meets the standards and definitions described in a contract or specification, throughout the development process.
 
 ## On-premise Web API Testing Tools
 

@@ -79,7 +79,7 @@ export const Diagnostics: React.FunctionComponent<{
                 <div className="w-10 text-center leading-loose text-base" title={DiagnosticSeverity[result.severity]}>
                   <Icon icon={icon} style={{ color }} />
                 </div>
-                <div className="ml-4 w-10 text-center">{result.range.start.line}</div>
+                <div className="ml-4 w-10 text-center">{result.range.start.line + 1}</div>
                 <div className="ml-4 flex-1" title={result.message}>
                   {result.message}
                 </div>
