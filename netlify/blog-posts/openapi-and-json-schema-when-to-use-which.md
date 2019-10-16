@@ -27,7 +27,7 @@ meta:
 ---
 OpenAPI v3.0 was a big step forward for the API design community. It expanded on and improved design-first processes and automation. It simplified definitions for more reusability, while supporting more security schemes. Among the largest additions were components. While these components improved upon previous JSON schema support, OpenAPI v3.0 still leaves developers to cover for its incompatibilities.
 
-Many organizations have existing objects described by JSON Schema. The elephant in the room is that developers are running into a big problem: OpenAPI [still does not recognize and support some JSON Schema keywords]. (https://apisyouwonthate.com/blog/openapi-and-json-schema-divergence-part-1).
+Many organizations have existing objects described by JSON Schema. The elephant in the room is that developers are running into a big problem: OpenAPI [still does not recognize and support some JSON Schema keywords](https://apisyouwonthate.com/blog/openapi-and-json-schema-divergence-part-1).
 
 A brief history of the compatibility issues: OpenAPI v2.0 was an extended subset of JSON Schema. There was a divergence that led to a roughly 80% compatibility with JSON Schema Draft 4. OpenAPI v3.0 took us to 90% compatibility with JSON Schema Draft 5. In short, as of this writing, developers have never been able to use JSON Schema without dodging incompatibilities.
 
