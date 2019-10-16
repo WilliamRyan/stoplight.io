@@ -25,7 +25,7 @@ actionBar:
 meta:
   robots: 'index, follow'
 ---
-OpenAPI v3.0 was a big step forward for the API design community. It expanded on and improved design-first processes and automation. It simplified definitions for more reusability, while supporting more security schemes. Among the largest additions were components. While these components improved upon previous JSON schema support, OpenAPI v3.0 still leaves developers to cover for its incompatibilities.
+OpenAPI v3.0 was a big step forward for the API design community. It expanded on and improved design-first processes and automation. It simplified definitions for more reusability, while supporting more security schemes. Among the largest additions were components. While these components improved upon previous JSON Schema support, OpenAPI v3.0 still leaves developers to cover for its incompatibilities.
 
 Many organizations have existing objects described by JSON Schema. The elephant in the room is that developers are running into a big problem: OpenAPI [still does not recognize and support some JSON Schema keywords](https://apisyouwonthate.com/blog/openapi-and-json-schema-divergence-part-1).
 
