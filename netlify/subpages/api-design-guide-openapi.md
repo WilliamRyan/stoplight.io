@@ -1,42 +1,48 @@
 ---
 path: /api-design-guide/openapi
-tags: ['guides', 'api-design']
-relatedTags: ['api-design']
+tags:
+  - guides
+  - api-design
+relatedTags:
+  - api-design
 publishedDate: 'Jan 23, 2019'
-title: Understanding OpenAPI
+title: OpenAPI Design Guide & Specification
 subtitle: Learn all there is about API Design through our comprehensive guide
 color: orange
 tabs:
-  - title: API Design Basics
-    href: /api-design-guide/basics
-  - title: API Design Tooling
-    href: /api-design-guide/tooling
-  - title: Understanding OpenAPI
-    href: /api-design-guide/openapi
+  - href: /api-design-guide/basics
+    title: API Design Basics
+  - href: /api-design-guide/tooling
+    title: API Design Tooling
+  - href: /api-design-guide/openapi
+    title: Understanding OpenAPI
   - href: /api-design-guide-download
     title: Download the Guide
 actionBar:
-  enabled: true,
-  text: Read how world’s leading API first companies are solving API Design Management at Scale.
   ctas:
-    - title: Get the API Design Guide
-      type: submit
-      submit:
+    - submit:
         button:
-          color: purple
           title: Get the API Design Guide
+          color: purple
+        formId: e6cb86b0-8b13-49b8-860a-0e717da5489d
         input:
+          placeholder: Your work email...
           type: email
-          placeholder: 'Your work email...'
-        formId: 'e6cb86b0-8b13-49b8-860a-0e717da5489d'
-        className: 'mt-4 p-4 bg-black text-white'
+      title: Get the API Design Guide
+      type: submit
+  enabled: 'true,'
+  text: >-
+    Read how world’s leading API first companies are solving API Design
+    Management at Scale.
 meta:
+  description: >-
+    Get to know the intricate details of the all-important OpenAPI with
+    Stoplight’s comprehensive and technical guide.
   robots: 'index, follow'
-  title: API Design Guide | OpenAPI
-  description: Get to know the intricate details of the all-important OpenAPI with Stoplight’s comprehensive and technical guide.
+  title: OpenAPI Design Guide & OpenAPI Specification | OpenAPI
   twitter:
+    title: OpenAPI Design Guide & OpenAPI Specification | OpenAPI
     image: /images/mark_light_bg.png
-    title: API Design Guide | OpenAPI
     username: '@stoplightio'
 ---
 
