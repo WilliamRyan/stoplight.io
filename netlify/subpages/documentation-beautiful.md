@@ -19,12 +19,12 @@ meta:
   description: >-
     Our tool is built to product aesthetically pleasing and user oriented
     documentation. Does your documentation generator do that?
-  title: Beautiful Documentation for APIs | Stoplight
+  title: Beautiful Documentation for APIs | Beautiful API Documentation Theme
   twitter:
     description: >-
       Our tool is built to product aesthetically pleasing and user oriented
       documentation. Does your documentation generator do that?
-    title: Beautiful Documentation for APIs | Stoplight
+    title: Beautiful Documentation for APIs | Beautiful API Documentation Theme
     username: '@stoplightio'
 ---
 
