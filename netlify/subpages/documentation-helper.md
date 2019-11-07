@@ -20,11 +20,16 @@ tabs:
 actionBar:
   enabled: false
 meta:
+  description: >-
+    Read through Stoplight’s comprehensive library of helper documentation,
+    including guides, overviews, code samples, and workflows, right here.
   favicon: /images/mark_light_bg.png
-  title: Customizable API Documentation Tool | Stoplight
-  description: Read through Stoplight’s comprehensive library of helper documentation, including guides, overviews, code samples, and workflows, right here.
+  robots: 'index, follow'
+  title: Create Help Documentation | Customizable API Documentation Tool
+  image: /images/studio_docs.png
   twitter:
-    title: Customizable API Documentation Tool | Stoplight
+    title: Create Help Documentation | Customizable API Documentation Tool
+    username: '@stoplightio'
 ---
 
 ## Complete API Documentation
