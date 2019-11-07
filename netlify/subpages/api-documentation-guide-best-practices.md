@@ -7,7 +7,7 @@ relatedTags:
   - api-documentation
 publishedDate: 2019-02-11T18:06:16.962Z
 author: ''
-title: 'API Documentation Guide | Best Practices '
+title: Writing Good API Documentation Guide & Best Practices
 subtitle: A comprehensive guide to API documentation best practices
 color: green
 tabs:
@@ -21,12 +21,14 @@ actionBar:
   ctas: []
   enabled: false
 meta:
+  description: >-
+    Learn all you need to know about API documentation best practices with
+    Stoplight through our comprehensive guide written by our very own engineers.
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: API Documentation Guide | Best Practices
-  description: Learn all you need to know about API documentation best practices with Stoplight through our comprehensive guide written by our very own engineers.
+  title: API Documentation Guide | Good API Documentation & Best Practices
   twitter:
-    title: API Documentation Guide | Best Practices
+    title: API Documentation Guide | Good API Documentation & Best Practices
     username: '@stoplightio'
 ---
 
