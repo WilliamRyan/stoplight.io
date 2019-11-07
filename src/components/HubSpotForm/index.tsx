@@ -40,11 +40,16 @@ export class HubSpotForm extends React.Component<IHubSpotForm, IHubSpotFormState
     if (!(window as any).hbspt || !portalId || !formId) {
       return;
     }
+    const email = window.localStorage.getItem('email') || '';
 
-    (window as any).hbspt.forms.create({
+    const form = (window as any).hbspt.forms.create({
       target: '#hubspot-form',
       portalId,
       formId,
+    });
+
+    form.onReady(() => {
+      form.setFieldValue('email', email);
     });
 
     this.setState({ isLoaded: true });

@@ -16,8 +16,15 @@ export interface ISubmit {
 export const Submit: React.FunctionComponent<ISubmit> = ({ button, className, input, formId }) => {
   const { integrations } = useSiteData();
 
-  const [value, setValue] = React.useState('');
+  let defaultValue = '';
+
+  if (typeof window !== 'undefined') {
+    defaultValue = window.localStorage.getItem('email') || '';
+  }
+
+  const [value, setValue] = React.useState(defaultValue);
   const [loading, response, submitForm] = useSubmitEmailForm(integrations.hubspot, formId);
+
   const handleSubmit = React.useCallback(
     e => {
       if (e) {
@@ -26,6 +33,7 @@ export const Submit: React.FunctionComponent<ISubmit> = ({ button, className, in
       }
 
       submitForm([{ name: 'email', value }]);
+      window.localStorage.setItem('email', value);
     },
     [submitForm, value],
   );
