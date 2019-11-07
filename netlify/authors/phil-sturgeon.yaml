@@ -1,0 +1,28 @@
+path: /blog/author/phil-sturgeon
+tag: author
+title: Phil Sturgeon
+subtitle: >-
+  Phil Sturgeon has been building APIs professionally since 2010. He’s worked as
+  API/architectural consultant for all sorts of companies, from small startups
+  to WeWork. He wrote about his experiences in _Surviving Other People's APIs_
+  and _Build APIs You Won’t Hate_, and grew a community into the largest
+  API-related Slack channel on the internet. Now Phil builds API design tooling
+  at Stoplight, helping with architecture and open-source.
+image: /images/phil-sturgeon-headshot2.png
+color: black
+actionBar:
+  ctas: []
+  enabled: false
+meta:
+  description: Syndicated blog posts from Phil Sturgeon | Stoplight API Design
+  favicon: /images/mark_light_bg.png
+  robots: 'index, follow'
+  title: 'Phil Sturgeon, Syndicated Author | Stoplight API Design'
+  twitter:
+    description: Syndicated blog posts from Phil Sturgeon | Stoplight API Design
+    title: 'Phil Sturgeon, Syndicated Author | Stoplight API Design'
+    image: /images/phil-sturgeon-headshot.png
+    username: '@stoplightio'
+pagination:
+  enabled: true
+  perPage: 5
