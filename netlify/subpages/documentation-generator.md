@@ -1,7 +1,7 @@
 ---
 path: /documentation/generator
 publishedDate: 2019-07-08T20:35:30.631Z
-title: API Documentation Generator
+title: API Documentation Generator Online
 subtitle: Generate API Documentation Instantly
 color: green
 tabs:
@@ -22,13 +22,13 @@ meta:
     Our unique documentation tool allows you to easily generate API
     documentation directly from your API specification for immediate online
     publication
-  title: Instant API Documentation Generator | Generate API Documentation
+  title: Instant API Documentation Generator | Generate API Documentation Online
   twitter:
     description: >-
       Our unique documentation tool allows you to easily generate API
       documentation directly from your API specification for immediate online
       publication
-    title: Instant API Documentation Generator | Generate API Documentation
+    title: Instant API Documentation Generator | Generate API Documentation Online
     username: '@stoplightio'
 ---
 
