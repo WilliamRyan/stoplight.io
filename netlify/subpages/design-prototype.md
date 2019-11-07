@@ -1,38 +1,40 @@
 ---
 path: /design/prototype
-tags: ['']
-relatedTags: ['']
+tags:
+  - ''
+relatedTags:
+  - ''
 publishedDate: 'Jan 23, 2019'
+title: API Prototype & Modeling Tool
 subtitle: >-
-  Quickly build web APIs in a collaborative, powerful, visual editor that
-  allows you to prototype and share your API within minutes
-title: API Prototype Tool
+  Quickly build web APIs in a collaborative, powerful, visual editor that allows
+  you to prototype and share your API within minutes
 color: blue
+tabs:
+  - href: /design
+    title: API Design
+  - href: /design/enterprise
+    title: Enterprise API Design
+  - href: /design/free
+    title: Free API Design Tool
+  - href: /design/prototype
+    title: API Prototype Tool
+  - href: /design/web
+    title: Web API Design Tool
 actionBar:
   enabled: false
-tabs:
-  - title: API Design
-    href: /design
-  - title: Enterprise API Design
-    href: /design/enterprise
-  - title: Free API Design Tool
-    href: /design/free
-  - title: API Prototype Tool
-    href: /design/prototype
-  - title: Web API Design Tool
-    href: /design/web
 meta:
   description: >-
     Build web APIs using our collaborative, powerful, and quick visual editor
     that allows for speedy creation and sharing within a matter of minutes
+  title: API Design Prototype Tool & Modeling Template | Stoplight
   image: /images/mark_light_bg.png
-  title: API Design Prototype Tool | Stoplight
   twitter:
     description: >-
       Build web APIs using our collaborative, powerful, and quick visual editor
       that allows for speedy creation and sharing within a matter of minutes
+    title: API Design Prototype Tool & Modeling Template | Stoplight
     image: /images/mark_light_bg.png
-    title: API Design Prototype Tool | Stoplight
     username: '@stoplightio'
 ---
 
