@@ -7,7 +7,7 @@ relatedTags:
   - mocking
   - blog-testing
 publishedDate: 2019-03-14T16:49:10.182Z
-title: Simple Mock/Dummy API Server & API Guide
+title: Mock API Server Testing & API Mocking Guide
 subtitle: 'Learn how to use mock data to design, build, and test APIs'
 color: black
 tabs:
@@ -25,8 +25,10 @@ meta:
     Server? Check out our Mock API Server guide right here to find out
     everything you need to know.
   robots: 'index, follow'
-  title: Mock/Dummy API Server API Guide | Basics
-  twitter: {}
+  title: Mock API Server Guide | Mock APIs Testing & API Mocking Guide
+  twitter:
+    title: Mock API Server Guide | Mock APIs Testing & API Mocking Guide
+    username: '@stoplightio'
 ---
 
 The fastest way to understand what’s possible with an API is to send it requests and review the responses. During the initial design of an API, it can take weeks to have live calls available. You can develop against an API in parallel by [creating mock API servers](/mocking/server/) to return example results. Furthermore, you can create a better API by getting feedback sooner and iterating before writing code to serve a production API.
