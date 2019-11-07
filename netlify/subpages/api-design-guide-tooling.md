@@ -20,27 +20,30 @@ tabs:
   - href: /api-design-guide-download
     title: Download the Guide
 actionBar:
-  enabled: true,
-  text: Read how world’s leading API first companies are solving API Design Management at Scale.
   ctas:
-    - title: Get the API Design Guide
-      type: submit
-      submit:
+    - submit:
         button:
-          color: purple
           title: Get the API Design Guide
+          color: purple
+        formId: e6cb86b0-8b13-49b8-860a-0e717da5489d
         input:
+          placeholder: Your work email...
           type: email
-          placeholder: 'Your work email...'
-        formId: 'e6cb86b0-8b13-49b8-860a-0e717da5489d'
-        className: 'mt-4 p-4 bg-black text-white'
+      title: Get the API Design Guide
+      type: submit
+  enabled: 'true,'
+  text: >-
+    Read how world’s leading API first companies are solving API Design
+    Management at Scale.
 meta:
+  description: >-
+    Find out all you need to know about API Design Tooling with our technical,
+    yet easy to understand guide, written by our very own engineers.
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: API Design Guide | Tooling
-  description: Find out all you need to know about API Design Tooling with our technical, yet easy to understand guide, written by our very own engineers.
+  title: API Design Tooling Guide & Support | OpenAPI Design Tools
   twitter:
-    title: API Design Guide | Tooling
+    title: API Design Tooling Guide & Support | OpenAPI Design Tools
     image: /images/mark_light_bg.png
     username: '@stoplightio'
 ---
