@@ -66,6 +66,22 @@ featureSection:
       image: /images/prism_logging.png
       shortName: Logging
       title: Extensive logging
+
+    - description: Support for callbacks for OpenAPI 3.0 documents
+      image: /images/prism_logging.png
+      shortName: Support for Callbacks
+      title: Support for Callbacks
+
+    - description: Support for all the security specifications
+      image: /images/prism_logging.png
+      shortName: Security Specifications
+      title: Security Specifications
+
+    - description: Proxy command to an upstream server with response validation
+      image: /images/prism_logging.png
+      shortName: Upstream Proxy Command
+      title: Proxy Command to Upstream Server
+
 meta:
   description: Accelerate API development with realistic mock servers powered by API descriptions
   favicon: /images/mark_light_bg.png
