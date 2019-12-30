@@ -15,6 +15,13 @@ export default {
   extension: 'yaml',
   fields: [
     {
+      label: 'Tags',
+      name: 'tags',
+      widget: 'list',
+      required: false,
+      field: { label: 'tag', name: 'tag', widget: 'string', required: false },
+    },
+    {
       name: 'path',
       label: 'URL Path',
       widget: 'string',

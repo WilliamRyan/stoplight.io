@@ -46,7 +46,7 @@ Auth0, the popular authorization service, [integrates seamlessly into your docum
 
 ### Theming
 
-[Theming](https://docs.stoplight.io/documentation/design/theming) brings your API documentation to life. It allows you to easily modify color schemes and add textures to your documentation. There are four different theme settings that can be modified: Primary Color, Secondary Color, Background, and Texture.
+[Theming](https://docs.stoplight.io/documentation/design/theming) brings your professional API documentation for enterprises to life. It allows you to easily modify color schemes and add textures to your documentation. There are four different theme settings that can be modified: Primary Color, Secondary Color, Background, and Texture.
 
 ### Custom CSS
 

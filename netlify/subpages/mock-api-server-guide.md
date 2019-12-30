@@ -39,9 +39,9 @@ A mock API server imitates a real API server by providing realistic responses to
 
 ### Why Use API Mocking?
 
-A mock API server is useful during development and testing when live data is either unavailable or unreliable. While designing an API, you can use mock APIs to work concurrently on the front and back-end, as well as to gather feedback from developers. Use a mock API server so the absence of a real API doesn’t hold you back.
+A mock API server is useful during development and testing when live data is either unavailable or unreliable. While designing an API, you can use mock APIs to work concurrently on the front and back-end, as well as to gather feedback from developers. Our mock API sever guide for testing covers how you can use a mock API server so the absence of a real API doesn’t hold you back.
 
-Often with internal projects, the API consumer (such as a front end developer through REST APIs) moves faster than the backend team building the API. A mock API server allows developers to consume a working API with the same interface as the eventual production API. As an added benefit, the backend team can discover where the mock API doesn’t meet the developer’s needs without spending developer time on features that may be removed or changed. This fast feedback loop can make engineering teams much more efficient.
+Often with internal projects, the API consumer (such as a front end developer through REST APIs) moves faster than the backend team building the API. This API mocking guide shows how a mock API server allows developers to consume a working API with the same interface as the eventual production API. As an added benefit, the backend team can discover where the mock API doesn’t meet the developer’s needs without spending developer time on features that may be removed or changed. This fast feedback loop can make engineering teams much more efficient.
 
 You can also use mock APIs to emulate APIs you don’t control. For example, you can use a local mock server to fake results from a public API when you aren’t connected to the Internet. Or, use mock data responses if live calls to an API would incur a charge from the provider.
 

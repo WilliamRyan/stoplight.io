@@ -118,8 +118,6 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
 
   return (
     <Section id="product" {...sectionProps} className="pb-32" noPadding>
-      <FeatureStrip features={features} />
-
       {(title || description) && (
         <Container title={title} className={cn(!buttons || !buttons.length ? 'py-32 border-b' : null)}>
           {description && (

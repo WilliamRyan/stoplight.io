@@ -4,8 +4,10 @@ import AboutConfig from 'src/templates/About/config';
 import HomeConfig from 'src/templates/Home/config';
 import PricingConfig from 'src/templates/Pricing/config';
 import EnterpriseConfig from 'src/templates/Enterprise/config';
+import CareersConfig from 'src/templates/Careers/config';
 
 import FormConfig from 'src/templates/Form/config';
+
 import LandingConfig from 'src/templates/Landing/config';
 import { ListsConfig, AuthorConfig } from 'src/templates/Lists/config';
 import { SubpageConfig, BlogPostConfig, CaseStudyConfig } from 'src/templates/Subpage/config';
@@ -48,6 +50,7 @@ export const config = {
     AuthorConfig,
     CaseStudyConfig,
     BlogPostConfig,
+    CareersConfig,
   ],
   media_library: {
     name: 'cloudinary',

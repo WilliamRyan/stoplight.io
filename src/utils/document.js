@@ -124,7 +124,7 @@ export function Document({ Html, Head, Body, children, state }) {
           type="text/javascript"
           dangerouslySetInnerHTML={{
             __html: `
-          console.log("Interested in working for Stoplight? Check out our jobs listing: https://angel.co/stoplight/jobs");
+          console.log("Interested in working for Stoplight? Check out our jobs listing: https://stoplight.io/careers");
           window.__SL = ${JSON.stringify(__SL)};
           `,
           }}

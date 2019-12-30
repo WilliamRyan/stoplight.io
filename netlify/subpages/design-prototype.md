@@ -40,7 +40,7 @@ meta:
 
 ## Use OpenAPI Specification to Prototype APIs
 
-Stoplight provides web API tooling that kicks off the API development process with quick API prototyping. The visual API editor allows you to quickly specify your APIs’ endpoints, models, properties, and much more using the OpenAPI Specification (formerly known as Swagger).
+Using the Stoplight API modeling & prototype tool provides web API tooling that kicks off the API development process with quick API prototyping. The visual API editor allows you to quickly specify your APIs’ endpoints, models, properties, and much more using the OpenAPI Specification (formerly known as Swagger).
 
 Think of the OpenAPI Specification as a prototype documentation template. It helps you create your REST API design prototype in human and machine-readable format. Describe endpoints, headers, bodies, multiple responses, query string parameters, shared models, and much more. You don’t have to think about what information you need to fill out. It is all there for you.
 

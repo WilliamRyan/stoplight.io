@@ -4,7 +4,7 @@ import { withRouteData, withSiteData } from 'react-static';
 
 import { Container } from '../../components/Container';
 import { CustomerSection } from '../../components/CustomerSection';
-import { Features, IFeature, IFeatures } from '../../components/Features';
+import { Features, IFeature } from '../../components/Features';
 import { Hero, IHero } from '../../components/Hero';
 import { IImage } from '../../components/Image';
 import { Layout } from '../../components/Layout';

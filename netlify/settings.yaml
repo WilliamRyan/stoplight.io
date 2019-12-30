@@ -42,7 +42,7 @@ header:
           icon: ['fad', 'video']
           subtitle: Learn how to design with Stoplight
           title: Webinars
-          titleColor: yellow
+          titleColor: yellow 
         - divider: true
         - href: /api-design-guide/basics
           icon: ['fad', 'paint-brush']
@@ -69,6 +69,8 @@ header:
       isButton: true
       title: Book a Demo
       altBg: purple
+    - href: /about
+      title: About
     - href: /start
       isButton: true
       title: Start
@@ -125,6 +127,8 @@ footer:
     - links:
         - href: /about
           title: About Us
+        - href: /careers
+          title: Careers
         - href: https://stoplight.io/p/roadmap
           title: Roadmap
         - href: 'https://press.stoplight.io'
@@ -166,8 +170,6 @@ customers:
       src: /images/ea.png
     - alt: Deutsche Bank
       src: /images/deutsche_bank.png
-    - alt: quicken
-      src: /images/customers/quicken.png
     - alt: Sendgrid
       src: /images/logo-sendgrid.png
     - alt: TiVo

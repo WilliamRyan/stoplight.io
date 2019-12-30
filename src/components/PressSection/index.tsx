@@ -36,11 +36,11 @@ export const Press = ({ image, date, description, publication, href }) => {
   );
 };
 
-export const PressSection: React.FunctionComponent<IPressSection> = ({ id, title, articles, cta }) => {
+export const PressSection: React.FunctionComponent<IPressSection> = ({ id, title, articles, cta, ...sectionProps }) => {
   if (!articles || !articles.length) return null;
 
   return (
-    <Section id={id}>
+    <Section id={id} {...sectionProps}>
       <Container title={title} cta={cta}>
         <div className="flex justify-center flex-wrap -mb-12">
           {articles.map((item, key) => {

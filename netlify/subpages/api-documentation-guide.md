@@ -37,7 +37,7 @@ meta:
 
 Can an API even be used without documentation? While technically possible, it’s through good API documentation that developers first experience an API and get to know its functionality. Whether your API is meant for internal use, exposed to partners, or fully public, developers will need complete and accurate documentation to best complete their integrations.
 
-In this guide, we’ll cover the basics of documentation and the different types you’ll want for the comprehensive coverage developers require. We’ll also cover and look into API description documents as well as API description examples.
+In this API documentation guide & tutorial, we’ll cover the basics of documentation and the different types you’ll want for the comprehensive coverage developers require. We’ll also cover and look into API description documents as well as API description examples.
 
 ### What is API documentation?
 

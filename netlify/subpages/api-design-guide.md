@@ -53,9 +53,9 @@ meta:
 
 ## What is API Design?
 
-API design is the collection of planning and architectural decisions you make when building an API. Your basic API design influences how well developers are able to consume it and even how they use it. Just like website design or product design, API design informs the user experience. Good API design meets initial expectations and continues to behave consistently and predictably.
+API design is the collection of planning and architectural decisions you make when building an API. Your basic API design influences how well developers are able to consume it and even how they use it. Just like website design or product design, API design informs the user experience. Good API design meets initial expectations and continues to behave consistently and predictably. Our API design guide assists in supporting this theme throughout your API design process.
 
-There is not a single approach to design APIs “the right way.” Instead, we need to lean on industry API design guidelines, best practises and patterns where relevant, then take cues from those who will use our APIs.
+There is not a single approach to design APIs “the right way.” Instead, we need to lean on industry basic API design guidelines, best practices and patterns where relevant, then take cues from those who will use our APIs.
 
 ## Choose your API Specification
 

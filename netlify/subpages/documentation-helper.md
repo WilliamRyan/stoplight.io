@@ -46,7 +46,7 @@ Stoplight allows users to:
 
 ## Documentation Editor
 
-To support a holistic approach to documentation, Stoplight’s Markdown API documentation editor allows you to write free-form documentation content. You aren’t restricted to a specific template. This is helpful for all kinds of helper documentation that you write alongside your OpenAPI Specification (formerly known as Swagger) generated API reference docs. You can even write API tutorials based on your OpenAPI Specification. We pushed the limits of API documentation beyond specification and models to accommodate all of the secondary and tertiary information that can help drive good developer experience.
+To support a holistic approach to documentation, Stoplight’s Markdown API documentation editor allows you to write free-form documentation content. You aren’t restricted to a specific template. This is helpful for all kinds of helper documentation that you write alongside your OpenAPI Specification (formerly known as Swagger) generated API reference docs. You can even write API tutorials and create help documentation based on your OpenAPI Specification. We pushed the limits of API documentation beyond specification and models to accommodate all of the secondary and tertiary information that can help drive good developer experience.
 
 ## Customizable Features
 

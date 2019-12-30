@@ -45,7 +45,7 @@ export default {
     {
       name: 'href',
       label: 'href',
-      widget: 'list',
+      widget: 'string',
       required: false,
     },
   ],

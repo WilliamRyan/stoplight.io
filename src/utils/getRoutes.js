@@ -12,6 +12,7 @@ export async function getRoutes() {
     about,
     enterprise,
     forms = [],
+    careers = [],
 
     lists = [],
     authors = [],
@@ -26,6 +27,7 @@ export async function getRoutes() {
     getFile(`${NETLIFY_PATH}/pages/about.yaml`),
     getFile(`${NETLIFY_PATH}/pages/enterprise.yaml`),
     getFiles(`${NETLIFY_PATH}/forms`),
+    getFiles(`${NETLIFY_PATH}/careers`),
 
     getFiles(`${NETLIFY_PATH}/lists`),
     getFiles(`${NETLIFY_PATH}/authors`),
@@ -40,7 +42,7 @@ export async function getRoutes() {
   caseStudies = caseStudies.map(caseStudy => ({ ...caseStudy, backgroundSize: 'contain' }));
 
   // add author to pages and remove pages without a path
-  const allPages = [...landings, ...caseStudies, ...blogPosts, ...other].filter(page => {
+  const allPages = [...landings, ...caseStudies, ...blogPosts, ...careers, ...forms, ...other].filter(page => {
     if (page.path && !page.redirect) {
       const authorPage = authors.find(author => author.title === page.author);
 
@@ -94,6 +96,8 @@ export async function getRoutes() {
     ...createListRoutes('src/templates/Lists', lists, allPages),
     ...createListRoutes('src/templates/Lists', authors, allPages, authorProps),
     ...createRoutes('src/templates/Subpage', blogPosts, allPages, blogPostProps),
+    ...createRoutes('src/templates/Careers', careers, allPages),
+
     ...createRoutes('src/templates/Subpage', caseStudies, allPages, caseStudyProps),
     ...createRoutes('src/templates/Subpage', other, allPages),
     ...createRoutes('src/templates/Form', forms, allPages),
@@ -117,7 +121,7 @@ function filterPages(allPages, filter) {
       listSubtitle: page.listSubtitle,
       image: page.image,
       listImage: page.listImage,
-      href: page.path,
+      href: page.href || page.path,
       tags: page.tags, // used to show which tag matches the search
       author: page.author,
       publishedDate: formatDate(page.publishedDate),

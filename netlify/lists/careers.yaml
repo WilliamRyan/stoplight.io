@@ -1,0 +1,17 @@
+path: /careers
+tag: careers
+title: Careers at Stoplight
+subtitle: We're always looking for talented people to join the Stoplight team!
+color: indigo
+actionBar:
+  enabled: false
+meta:
+  description: >-
+    We're always looking for talented people to join the Stoplight team!
+  favicon: /images/mark_light_bg.png
+  title: Careers at Stoplight
+  twitter:
+    title: Careers at Stoplight
+    username: '@stoplightio'
+pagination:
+  enabled: true

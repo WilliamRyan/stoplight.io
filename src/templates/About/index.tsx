@@ -5,10 +5,13 @@ import { withRouteData } from 'react-static';
 import { ActionBar, IActionBar } from '../../components/ActionBar';
 import { Businesses, IBusinesses } from '../../components/Businesses';
 import { Collage, ICollage } from '../../components/Collage';
+import { FeatureSection, FeatureStrip, IFeatureSection } from '../../components/FeatureSection';
 import { Hero, IHero } from '../../components/Hero';
 import { Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
 import { IPressSection, PressSection } from '../../components/PressSection';
+import { Section } from '../../components/Section';
+import { IValueSection, ValueSection } from '../../components/Value';
 
 export interface IMember {
   image: string;
@@ -25,6 +28,8 @@ export interface IAbout {
   businesses: IBusinesses;
   pressSection: IPressSection;
   collage: ICollage;
+  featureSection: IFeatureSection;
+  valueSection: IValueSection;
 }
 
 const Member: React.FunctionComponent<IMember> = ({ image, name, role, isLast }) => {
@@ -54,21 +59,35 @@ export const About: React.FunctionComponent<IAbout> = ({
   actionBar,
   pressSection,
   collage,
+  featureSection,
+  valueSection,
 }) => {
   return (
     <Layout>
       <Hero key="hero" bgColor={color} greyBg {...hero} />
 
+      <Section noPadding>
+        <FeatureStrip features={featureSection.features} />
+      </Section>
+
+      {/* commenting out values section while we wait to solidify company values */}
+      {/* {valueSection.values && <ValueSection values={valueSection.values} />} */}
+
+      <FeatureSection color={color} {...featureSection} />
+
       {team.length ? (
-        <div className="bg-grey-lightest relative z-5 pt-12">
-          <div className="container flex flex-wrap justify-center md:justify-around text-center md:px-0">
-            {team.map((member, index) => (
-              <Member key={index} isLast={index === team.length - 1} {...member} />
-            ))}
+        <div>
+          <h3 className="text-center text-3xl pb-48 md:mb-14 sm:pb-10 relative">Meet The Team</h3>
+          <div className="bg-grey-lightest z-5 sm:pt-32">
+            <div className="container flex flex-wrap justify-center md:justify-around text-center md:px-0">
+              {team.map((member, index) => (
+                <Member key={index} isLast={index === team.length - 1} {...member} />
+              ))}
+            </div>
           </div>
 
           {actionBar && actionBar.enabled ? (
-            <div className="md:pb-24 pb-40 -mt-10">
+            <div className="md:pb-24 -mt-10">
               <ActionBar {...actionBar} />
             </div>
           ) : null}

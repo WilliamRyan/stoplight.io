@@ -30,7 +30,7 @@ meta:
 
 ## Generate Beautiful OpenAPI Documentation
 
-Well-designed, beautiful documentation can subtly influence the way they are consumed. Design is important in all things but is particularly vital for objects of great complexity with a steep learning curve. Aesthetically pleasing, beautiful design has proven to influence the way users consume your documentation by increasing its perceived value and usefulness and diminishing the learning curve.
+Well-designed, beautiful documentation for APIs can subtly influence the way they are consumed. Design is important in all things but is particularly vital for objects of great complexity with a steep learning curve. Aesthetically pleasing, beautiful API documentation theming and design has proven to influence the way users consume your documentation by increasing its perceived value and usefulness and diminishing the learning curve.
 
 ## Perceived Value and Usefulness
 

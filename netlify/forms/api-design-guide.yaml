@@ -55,8 +55,6 @@ collage:
       src: /images/chargify-new-logo.png
     - alt: Deutsche Bank
       src: /images/deutsche_bank.png
-    - alt: quicken
-      src: /images/customers/quicken.png
     - alt: Sendgrid
       src: /images/logo-sendgrid.png
     - alt: Shopgate

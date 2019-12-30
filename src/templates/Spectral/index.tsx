@@ -3,7 +3,7 @@ import NoSSR from 'react-no-ssr';
 import { withRouteData } from 'react-static';
 
 import { ICollage } from '../../components/Collage';
-import { FeatureSection, IFeatureSection } from '../../components/FeatureSection';
+import { FeatureSection, FeatureStrip, IFeatureSection } from '../../components/FeatureSection';
 import { Hero, IHero } from '../../components/Hero';
 import { HubSpotForm, IHubSpotForm } from '../../components/HubSpotForm';
 import { IImageCallout } from '../../components/ImageCallout';
@@ -48,6 +48,9 @@ export const Landing: React.FunctionComponent<ILanding> = ({
           )
         }
       />
+      <Section noPadding>
+        <FeatureStrip features={featureSection.features} />
+      </Section>
 
       <FeatureSection color={color} {...featureSection} />
 

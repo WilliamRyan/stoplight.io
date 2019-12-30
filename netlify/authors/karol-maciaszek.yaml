@@ -1,0 +1,21 @@
+path: /blog/author/karol-maciaszek
+tag: author
+title: Karol Maciaszek
+subtitle: Karol Maciaszek has been writing code since he was 10 years old and recently became a functional programming enthusiast. He has worked with companies like Allegro and Roche, as well as smaller startups. Karol is currently a Software Engineer at Stoplight, working on the team responsible for Prism. Together with Chris Miaskowski, Karol is a co-founder of 11sigma, a team-extension company focusing on API specialists. Secretly an AI algorithms fan. Father of 3 awesome kids!
+pageName: Contributor
+image: /images/carol-maciaszek-headshot.png
+color: black
+tabs:
+  - {}
+actionBar:
+  ctas:
+    - color: purple
+  enabled: false
+meta:
+  favicon: /images/mark_light_bg.png
+  title: Karol Maciaszek | Stoplight
+  robots: 'index, follow'
+  twitter:
+    title: Karol Maciaszek | Stoplight
+    username: '@stoplightio'
+pagination: {}

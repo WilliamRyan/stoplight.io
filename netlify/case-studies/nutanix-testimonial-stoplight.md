@@ -16,7 +16,7 @@ subtitle: >-
 listSubtitle: >-
   Learn from Ben Colborn, Director of Technical Publications, how Nutanix used
   Stoplight to scale the number of services that they could support.
-image: /images/Nutanix_Color.png
+image: /images/ben_colborn_nutanix.png
 color: orange
 includeToc: false
 sidebar:
@@ -44,13 +44,13 @@ meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: Nutanix Testimonial | Stoplight
-  image: /images/Nutanix_Color.png
+  image: /images/ben_colborn_nutanix.png
   twitter:
     description: >-
       Learn from Ben Colborn, Director of Technical Publications, how Nutanix
       used Stoplight to scale the number of services that they could support.
     title: Nutanix Testimonial | Stoplight
-    image: /images/Nutanix_Color.png
+    image: /images/ben_colborn_nutanix.png
     username: '@stoplightio'
 ---
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/gVjD72xGNm8' frameborder='0' allowfullscreen></iframe></div>

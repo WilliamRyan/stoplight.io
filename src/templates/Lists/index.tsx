@@ -18,6 +18,7 @@ export interface IListItem {
   subtitle: string;
   listSubtitle: string;
   image: string;
+  titleImage?: string;
   listImage?: string;
   href: string;
   author: IHeroAuthor;
@@ -64,7 +65,12 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
           </div>
 
           <div className="flex items-center">
-            <Button title="Read" shadow="none" rightIcon={['fad', 'arrow-right']} color="green" />
+            <Button
+              title={author ? 'Read' : 'Learn More'}
+              shadow="none"
+              rightIcon={['fad', 'arrow-right']}
+              color="green"
+            />
             <div className="flex-1" />
             {author && (
               <div className="flex items-center md:hidden text-grey-darker">

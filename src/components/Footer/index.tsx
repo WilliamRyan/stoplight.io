@@ -101,7 +101,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter } & IFooterProps>
                   elems.unshift(
                     <span key={`${index}-sep`} className="mx-2">
                       |
-                    </span>,
+                    </span>
                   );
                 }
 

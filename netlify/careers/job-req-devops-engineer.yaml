@@ -1,0 +1,133 @@
+path: /careers/devops-engineer
+href: 'https://stoplight.careerplug.com/jobs/1013189/apps/new'
+title: DevOps Engineer
+tags:
+  - careers
+image: /images/job-app.jpeg
+actionBar:
+  ctas:
+    - color: accent
+      href: 'https://www.stoplight.com/about'
+      title: About us
+  enabled: true
+  text: Find out more about what it's like to work at Stoplight
+subtitle: >-
+  FULL TIME • AUSTIN, TX
+color: blue
+hubspot:
+  formId: b1cc69d9-4b4a-4ea4-a199-b9e7ed0b7a09
+  portalId: '4892910'
+leftContent:
+  description: >-
+
+    ### Stoplight is looking for a talented DevOps engineer with hands-on programming, release engineering, and configuration management skills.
+
+    The DevOps Engineer is responsible for the delivery of a dynamic system infrastructure and automation platform to support an agile software development process.
+
+    - Deployment and Release Management
+
+    - Automation
+
+    - Infrastructure and Application Monitoring
+
+    - System Administration (corporate domains, corporate network exposure)
+
+
+    ### What is Stoplight?
+
+
+    Stoplight helps organizations design, document, test, collaborate and 
+    govern their APIs. We are the first product to effectively cover the entire 
+    API development lifecycle.<br><br>Stoplight’s mission is to make any stakeholder 
+    working with an API more productive. We work with individual developers to large companies 
+    including EA, Spotify, Sendgrid, and many others.
+
+
+    ### Why are we doing this?
+
+
+    We created Stoplight because we found existing API solutions tools 
+    to be inadequate. After talking with thousands of users and growing 
+    to 500+ paying customers, it’s clear there is a massive void for 
+    Stoplight to become the must-have workflow solution for any organization 
+    looking to streamline their API strategy.
+
+
+    ### What does it take to be successful in this role?
+
+
+    - Decreasing the amount of time to get software to customers
+
+    - Improving deployment, scalability, and management of our services
+
+    - Automating deployments of cloud-based highly-available containerized services
+
+    - Developing fast, scalable, highly available, and reliable applications
+
+    - Developing features that will drive our business through real-time feedback loops
+
+    - Deploying and using CI/CD platforms
+
+    - Supporting existing customers and solutions with a high level of service and an eye towards continuous improvement
+
+    - Performing analysis on best practices and emerging concepts in DevOps and Infrastructure Automation
+
+    - Performing profiling and troubleshooting of existing solutions
+
+    - Working with the team to determine tool requirements, driving implementation, documentation, maintenance, and improvement
+
+    - Mining and sharing data on performance, availability, and usability of new and existing systems
+
+    - Dedicated to delivering tested and optimized high-performance code for a distributed environment
+
+    - Developing quality scalable, tested and reliable applications using industry-standard methodologies
+
+    - Working with QA, product management and operations in an agile environment
+
+    - Participating in the resolution of production issues and lead efforts toward solutions
+
+
+    ### Requirements
+
+
+    - Background and/or passion for DevOps and software development
+
+    - Client-facing experience
+
+    - Excellent problem-solving and communication skills
+
+    - Self-motivated learner who enjoys actively seeking answers to questions
+
+    - Interest in exploring new technologies
+
+    - Constant curiosity to grow your skills beyond the workplace
+
+    - Love boiling complicated problems down to simple solutions
+
+
+    ### Benefits
+
+
+    Competitive salary. Stock options. Health, medical and dental. 401k.
+
+    ### About 
+
+    Headquartered in Austin, Texas, our team hails from across 
+    the US and Europe, and is united by our passion for APIs. 
+    From skeeball champions to rock climbers, tough mudders to 
+    restaurateurs, each and every member brings their own unique 
+    perspectives and experiences to the table. Thinking out of the 
+    box is our purpose - the weirder the better - and challenging 
+    the status quo is our culture.
+meta:
+  description: >-
+    Stoplight is hiring a DevOps Engineer.
+  favicon:
+  image:
+  title: DevOps Engineer | Stoplight
+  twitter:
+    description: >-
+      Stoplight is hiring a DevOps Engineer.
+    image: /images/gartner_cv_2019_rgb.png
+    title: DevOps Engineer | Stoplight
+    username: '@stoplightio'

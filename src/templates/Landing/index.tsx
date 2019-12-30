@@ -3,7 +3,7 @@ import { withRouteData } from 'react-static';
 
 import { Collage, ICollage } from '../../components/Collage';
 import { Container } from '../../components/Container';
-import { FeatureSection, IFeatureSection } from '../../components/FeatureSection';
+import { FeatureSection, FeatureStrip, IFeatureSection } from '../../components/FeatureSection';
 import { Hero, IHero } from '../../components/Hero';
 import { HubSpotForm, IHubSpotForm } from '../../components/HubSpotForm';
 import { IImageCallout, ImageCallout } from '../../components/ImageCallout';
@@ -38,6 +38,10 @@ export const Landing: React.FunctionComponent<ILanding> = ({
       <Hero bgColor={color} {...hero} />
 
       <ImageCallout {...imageCallout} />
+
+      <Section noPadding>
+        <FeatureStrip features={featureSection.features} />
+      </Section>
 
       <FeatureSection color={color} {...featureSection} />
 

@@ -7,8 +7,7 @@ hero:
   title: The best APIs start with Stoplight
 features:
   - name: API Design
-    summary: >-
-      Quickly model your APIs using visual tools on top of open standards.
+    summary: Quickly model your APIs using visual tools on top of open standards.
     href: /design
     icon: 'pencil-ruler'
     iconStyle:

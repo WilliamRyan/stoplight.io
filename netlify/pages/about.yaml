@@ -1,18 +1,53 @@
 path: /about
 hero:
   particles: true
-  subtitle: >-
-    Headquartered in Austin, Texas, our team hails from across the US and
-    Europe, and is united by our passion for APIs. From skeeball champions to
-    rock climbers, tough mudders to restaurateurs, each and every member brings
-    their own unique perspectives and experiences to the table. Thinking out of
-    the box is our purpose - the weirder the better - and challenging the status
-    quo is our culture.
-  title: About Us
+  image:
+    alt: About Us
+    src: /images/team/team.jpg
+  title: About Stoplight
+featureSection:
+  title: Our Company Mission
+  description: >-
+    At Stoplight, our mission is to enable all stakeholders working with
+    APIs to be more productive. We believe in a design-first approach to API development,
+    so we created products that provide a means for design-first development. 
+    Developing good design-first practices will minimize future costs, speed 
+    up your time to market and lead to more consistent, higher quality 
+    microservice and IoT applications.
+  features:
+    # - description: >-
+    #     In 2014, Marc MacLeod worked as an independent software consultant
+    #     in Los Angeles building Application Programming Interfaces, known as APIs,
+    #     for companies. MacLeod noticed that many of the APIs, which are systems of
+    #     tools and resources in an operating system that enable developers to create
+    #     software applications, lacked documentation and were poorly built. So, MacLeod
+    #     created a set of tools to serve as a blueprint for how to build better APIs,
+    #     and those tools became the foundation behind Stoplight.
+    #   image: /images/team/marc-and-tom.png
+    #   shortName: Our History
+    #   title: Our History
+    - description: >-
+        Headquartered in Austin, Texas, our team hails from across the US and Europe, 
+        and is united by our passion for APIs. From skeeball champions to rock climbers, 
+        tough mudders to restaurateurs, each and every member (including our office doggies) brings their own unique 
+        perspectives and experiences to the table. Thinking out of the box is our purpose 
+        - the weirder the better - and challenging the status quo is our culture. Think you'd be a good fit?
+        Check out our [current open roles](https://stoplight.io/careers), and come join us!
+      image: /images/team/dogs.gif
+      shortName: Careers
+      title: Careers
+    - description: >-
+        At Stoplight, we believe the positive impact we can make on the world isn't limited to the API space. 
+        That’s why we work with organizations like [Offset Earth](https://offset.earth/stoplightinc), [Urban Roots](https://urbanrootsatx.org/), 
+        and [OSMI](https://osmihelp.org/). Check out our [Offset Earth Forest](https://offset.earth/stoplightinc) 
+        to learn how we offset the carbon footprint of every Stoplight employee and became a climate positive workforce.
+      image: /images/team/offset-earth-badge.png
+      shortName: Social Good
+      title: Social Good
 team:
   - image: /images/andoni-alanis-cue.jpeg
     name: Andoni Alanis-Cue
-    role: Account Executive
+    role: Product Advocate
   - image: /images/bachi-collin-1-.jpg
     name: Collin Bachi
     role: Devops Engineer
@@ -55,6 +90,9 @@ team:
   - image: /images/team/vazha-omanashvili.png
     name: Vazha Omanashvili
     role: Software Engineer
+  - image: /images/team/stephen-price.jpg
+    name: Stephen Price
+    role: Sales Engineer
   - image: /images/pytleski_headshot.png
     name: Thomas Pytleski
     role: Software Engineer
@@ -76,12 +114,18 @@ team:
   - image: /images/surratt-headshot.jpg
     name: Kristen Surratt
     role: Customer Advocate
+  - image: /images/team/paula-tulis.jpg
+    name: Paula Tulis
+    role: Software Engineer
   - image: /images/wallach_headshot.png
     name: Robert Wallach
     role: Content & Support
   - image: /images/harrison-yeager-headshot.jpg
     name: Harrison Yeager
     role: Ops
+  - image: /images/team/tamina-zaheri.png
+    name: Tamina Zaheri
+    role: Product Advocate
 businesses:
   quotes:
     - author: Evin Callahan
@@ -167,7 +211,7 @@ collage:
 actionBar:
   ctas:
     - color: accent
-      href: 'https://angel.co/company/stoplight/jobs'
+      href: '/careers'
       title: Learn More
   enabled: true
   text: Want to join the team? We're hiring!
