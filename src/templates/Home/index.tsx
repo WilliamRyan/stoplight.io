@@ -10,6 +10,7 @@ import { IImage } from '../../components/Image';
 import { Layout } from '../../components/Layout';
 import { ProductCard } from '../../components/ProductCard';
 import { Section } from '../../components/Section';
+import { SimpleCard } from '../../components/SimpleCard';
 import { ITestimonials, Testimonials } from '../../components/Testimonials';
 
 export interface IHome {
@@ -34,6 +35,7 @@ export const Home: React.FunctionComponent<IHome> = ({ color, hero, customers, t
               segments: [{ color: 'blue-lighter', length: 2 }, { color: 'blue' }],
             }}
           >
+            <SimpleCard name="name" className="" />
             <div className="uppercase text-grey-dark font-semibold text-center text-lg">
               Quality APIs Don't Just Happen
             </div>
