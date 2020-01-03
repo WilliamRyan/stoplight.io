@@ -110,6 +110,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
   features,
   actionBar,
   buttons = [],
+  children,
   ...sectionProps
 }) => {
   if (!features || !features.length) {
@@ -128,7 +129,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
           )}
         </Container>
       )}
-
+      {children}
       {buttons && buttons.length ? (
         <Container className="mt-20 border-b">
           <div className="flex-1 flex lg:justify-center lg:items-between lg:flex-wrap">

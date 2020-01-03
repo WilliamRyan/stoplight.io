@@ -2,6 +2,8 @@ import cn from 'classnames';
 import * as React from 'react';
 import { withRouteData } from 'react-static';
 
+import { Container } from 'src/components/Container';
+import { Features } from 'src/components/Features';
 import { ActionBar, IActionBar } from '../../components/ActionBar';
 import { Businesses, IBusinesses } from '../../components/Businesses';
 import { Collage, ICollage } from '../../components/Collage';
@@ -73,7 +75,45 @@ export const About: React.FunctionComponent<IAbout> = ({
       {/* commenting out values section while we wait to solidify company values */}
       {/* {valueSection.values && <ValueSection values={valueSection.values} />} */}
 
-      <FeatureSection color={color} {...featureSection} />
+      <FeatureSection color={color} {...featureSection}>
+        <Container title="Core Values" className="pt-32">
+          <Features
+            features={[
+              {
+                name: 'Build Together',
+                icon: 'hammer',
+                iconStyle: {
+                  '--fa-primary-color': 'green',
+                  '--fa-secondary-color': 'green',
+                },
+                summary:
+                  'Collaboration is key to our success. Involving others in decision-making increases the amount of data, experience, and perspective to ensure the best path forward.',
+              },
+              {
+                name: 'Be An Owner',
+                icon: 'medal',
+                iconStyle: {
+                  '--fa-primary-color': 'gold',
+                  '--fa-secondary-color': 'gold',
+                },
+                summary:
+                  'We do our best work when we feel empowered. When we see an opportunity to make an impact, we seize it.',
+              },
+              {
+                name: 'Practice Mindfulness',
+                icon: 'brain',
+                iconStyle: {
+                  '--fa-primary-color': 'blue',
+                  '--fa-secondary-color': 'blue',
+                },
+                summary:
+                  'When interacting with our coworkers, our customers, and our communities we begin where they are, not where we want them to be.',
+              },
+            ]}
+            className="mt-2 sm:mt-6"
+          />
+        </Container>
+      </FeatureSection>
 
       {team.length ? (
         <div>
@@ -96,7 +136,7 @@ export const About: React.FunctionComponent<IAbout> = ({
 
       <PressSection id="press" {...pressSection} />
 
-      <Businesses id="businesses" {...businesses} />
+      {/* <Businesses id="businesses" {...businesses} /> */}
 
       <Collage id="investors" {...collage} />
     </Layout>
