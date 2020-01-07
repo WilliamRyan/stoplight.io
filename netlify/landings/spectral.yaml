@@ -1,12 +1,12 @@
 path: /open-source/spectral
-title: Spectral - Open Source API Description Linter | Stoplight
+title: Spectral - Open Source JSON/YAML Style Guide & Linter | Stoplight
 color: purple-darker
 hasSandbox: true
 relatedTags:
   - blog-design
 hero:
-  subtitle: Improve the quality of your API by improving the quality of your API descriptions.
-  title: Spectral, an Open Source API Description Linter
+  subtitle: Improve the quality of your API descriptions, Kubernetes config, GitHub Actions, or any other JSON/YAML data.
+  title: Spectral, an Open Source JSON/YAML Linter
   particles: true
   ctas:
     - color: green
@@ -30,12 +30,12 @@ featureSection:
     enabled: true
     text: Do you want feedback on your API descriptions right now?
 
-  title: Your API descriptions deserve better than "Technically Correct"
+  title: Keep unwieldy JSON and YAML files under control
   description: >-
-    Spectral is an open source OpenAPI-linter, which can tell you not just if
-    your API descriptions are valid, but if they are any good. Use our baked-in
-    rulesets for OpenAPI Specification v2/v3 (formerly known as Swagger specification),
-    or write your own!
+    Spectral is an open source JSON/YAML linter, which allows you to create style guides for
+    your structured data; things like OpenAPI/AsyncAPI/RAML descriptions, Kubernetes config, 
+    GitHub Actions, you name it, Spectral can help you lint it. Go beyond making sure they are
+    "Technically Correct", make sure they are _useful_.
 
   features:
     - description: >-
@@ -54,7 +54,7 @@ featureSection:
     - description: >-
         Ask 100 API designers what makes a good API design and you'll get 101
         answers, but all most developers really want is consistency. Using a
-        style guide, can reduce decision making and improve consistency for all your teams.
+        style guide can reduce decision making and improve consistency for all your teams.
         <br><br>You can use the default style guides, extend it, or write one to match your
         organization's style guide.
       image: /images/errors_and_warnings.png
