@@ -16,7 +16,9 @@ tabs:
   - href: /api-types
     title: API Types
   - href: /api-types/vs-rest-api/
-    title: SOAP APIs vs REST APIs    
+    title: SOAP APIs vs REST APIs
+  - href: /api-types/composite-api/
+    title: Composite APIs   
 actionBar:
   enabled: false
 meta:

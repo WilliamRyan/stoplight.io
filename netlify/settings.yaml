@@ -123,6 +123,8 @@ footer:
           title: Webinars
         - href: /case-studies
           title: Case Studies
+        - href: /api-types
+          title: API Types
       title: Resources
     - links:
         - href: /about
