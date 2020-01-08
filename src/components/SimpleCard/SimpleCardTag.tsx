@@ -1,6 +1,5 @@
 import cn from 'classnames';
 import * as React from 'react';
-import { Link } from 'src/components/Link';
 import { Icon } from '../Icon';
 
 export interface ISimpleCardTag {
