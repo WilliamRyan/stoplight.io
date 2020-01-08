@@ -1,9 +1,6 @@
 import cn from 'classnames';
 import * as React from 'react';
 
-import { IconName } from '@fortawesome/fontawesome-common-types';
-import { Icon, IconProp } from '../Icon';
-import { IImage, Image } from '../Image';
 import { Link } from '../Link';
 
 export interface ISimpleCard {
