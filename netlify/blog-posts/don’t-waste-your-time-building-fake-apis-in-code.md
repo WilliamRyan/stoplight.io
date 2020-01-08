@@ -98,6 +98,8 @@ public class MyResource {
 
 In this example, which you can see the full [details from here](https://jersey.github.io/documentation/latest/getting-started.html#new-project-structure), the API will return plain text. Want to return JSON? Well, unfortunately, even more setup is required.
 
+<div class="convertful-25567"></div>
+
 ## Build a Fake API in PHP
 
 PHP typically requires less writing as a language to set up a fake API, but the work is still significant. Generally, the process is as follows: set up a SQL database and table to store and change information, perhaps some connection variables in an .env file, create a class to hold your database connections, create a seed file to insert some mock data for testing, and connect your endpoints.

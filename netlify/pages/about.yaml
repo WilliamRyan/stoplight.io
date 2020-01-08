@@ -45,9 +45,6 @@ featureSection:
       shortName: Social Good
       title: Social Good
 team:
-  - image: /images/andoni-alanis-cue.jpeg
-    name: Andoni Alanis-Cue
-    role: Product Advocate
   - image: /images/bachi-collin-1-.jpg
     name: Collin Bachi
     role: Devops Engineer

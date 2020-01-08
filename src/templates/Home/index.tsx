@@ -49,6 +49,7 @@ export const Home: React.FunctionComponent<IHome> = ({
               segments: [{ color: 'blue-lighter', length: 2 }, { color: 'blue' }],
             }}
           >
+
             {/* <SimpleCard href="/case-studies/arkea" hoverable>
               <Image
                 className="w-1/2 h-12"
@@ -102,6 +103,7 @@ export const Home: React.FunctionComponent<IHome> = ({
                 <SimpleCardLink className="mt-4" />
               </SimpleCardBottom>
             </SimpleCard> */}
+        
             <div className="text-lg font-semibold text-center uppercase text-grey-dark">
               Quality APIs Don't Just Happen
             </div>
