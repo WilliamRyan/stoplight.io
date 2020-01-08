@@ -10,6 +10,7 @@ export interface ISimpleCard {
   hoverable?: boolean;
   iconFeature?: boolean;
   w?: string;
+  id: number;
 }
 
 export const SimpleCard: React.FunctionComponent<ISimpleCard> = ({

@@ -14,7 +14,7 @@ export const SimpleCardTag: React.FunctionComponent<ISimpleCardTag> = ({ classNa
   return (
     <>
       {text && (
-        <div className={cn(className, 'font-semibold')}>
+        <div className={cn(className, 'font-semibold text-blue')}>
           {text}
           <Icon icon={['fad', 'arrow-right']} className="ml-3" />
         </div>
