@@ -2,6 +2,12 @@ import cn from 'classnames';
 import * as React from 'react';
 import { withRouteData, withSiteData } from 'react-static';
 
+import { Icon } from 'src/components/Icon';
+import { SimpleCardBody } from 'src/components/SimpleCard/SimpleCardBody';
+import { SimpleCardBottom } from 'src/components/SimpleCard/SimpleCardBottom';
+import { SimpleCardTag } from 'src/components/SimpleCard/SimpleCardTag';
+import { Title } from 'src/components/SimpleCard/SimpleCardTitle';
+import { SimpleCardTop } from 'src/components/SimpleCard/SimpleCardTop';
 import { ActionBar, IActionBar } from '../../components/ActionBar';
 import { Container } from '../../components/Container';
 import { CustomerSection } from '../../components/CustomerSection';
@@ -11,6 +17,7 @@ import { Hero, IHero } from '../../components/Hero';
 import { IImage } from '../../components/Image';
 import { Layout } from '../../components/Layout';
 import { Section } from '../../components/Section';
+import { SimpleCard } from '../../components/SimpleCard';
 
 export interface IEnterprise {
   customers?: {
@@ -34,10 +41,19 @@ export const Enterprise: React.FunctionComponent<IEnterprise> = ({
   return (
     <Layout>
       <Hero bgColor={color} {...hero} aligned="center" image={hero.image && { ...hero.image, shadow: false }} />
+
       {features && (
         <Section id="features" className="pt-32 sm:pt-0" noPadding>
-          <Container>
-            <Features features={features} className="mt-2 sm:mt-6" />
+          <Container className="flex flex-wrap justify-around">
+            {features.map((feature: IFeature, index) => (
+              <SimpleCard id={index} className="text-center" iconFeature w="80">
+                <Icon icon={['fad', feature.icon]} className="text-center" size="3x" style={feature.iconStyle} />
+                <SimpleCardTop>
+                  <Title title={feature.name} />
+                </SimpleCardTop>
+                <SimpleCardBody summary={feature.summary} />
+              </SimpleCard>
+            ))}
           </Container>
         </Section>
       )}
