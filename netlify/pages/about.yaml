@@ -123,13 +123,11 @@ team:
   - image: /images/team/tamina-zaheri.png
     name: Tamina Zaheri
     role: Product Advocate
-businesses:
+businessQuotes:
   quotes:
     - author: Evin Callahan
       company: Hudya
-      image:
-        alt: Hudya
-        src: /images/hudya_logo.png
+      image: /images/hudya_logo.png
       quote: >-
         Having all the tools to model, test, and document our API in one place,
         and integrating it nicely along the entire CI/CD workflow process has
@@ -137,9 +135,7 @@ businesses:
       role: Cloud Architect
     - author: Josh Flyer
       company: AppointmentPlus
-      image:
-        alt: AppointmentPlus
-        src: /images/appointment_plus_logo.png
+      image: /images/appointment_plus_logo.png
       quote: >-
         We really enjoy the modeling feature, helping us define our API before
         even writing code. Also, the way the modeling feature inherits models
@@ -148,14 +144,11 @@ businesses:
       role: Lead Developer
     - author: Carlos Lozano
       company: GFT Group
-      image:
-        alt: GFT Group
-        src: /images/gft_group_logo.jpg
+      image: /images/gft_group_logo.jpg
       quote: >-
         Stoplight is getting better all the time. Big leap from [Stoplight]
         Classic.
       role: Senior Enterprise Architect
-  title: Businesses Are Loving Stoplight
 pressSection:
   articles:
     - date: 'October, 2018'

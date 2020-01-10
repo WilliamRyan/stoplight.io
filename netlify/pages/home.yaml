@@ -5,6 +5,25 @@ hero:
     The API design management platform powering the world’s leading API first
     companies.
   title: The best APIs start with Stoplight
+customers:
+  - company: Arkea
+    href: /case-studies/arkea
+    image: /images/logo_arkea_transparent.png
+    summary: Arkéa has been involved in open banking for several years by providing white label banking services and saw PSD2 as an opportunity to extend their open banking features.
+    tag: Finance
+    color: orange
+  - company: Namely
+    href: /case-studies/namely
+    image: /images/logo_namely_transparent.png
+    summary: Namely’s chief objective was to adopt API Design First principles. As they applied their new principle, they realized the importance of reliable, up to date, documentation.
+    tag: HR
+    color: indigo
+  - company: Appointment Plus
+    href: /case-studies/appointmentplus
+    image: /images/logo_appointmentplus_transparent.png
+    summary: AppointmentPlus was managing multiple APIs built by different teams, at different times, with different strategies and intents.
+    tag: Tech
+    color: green
 features:
   - name: API Design
     summary: Quickly model your APIs using visual tools on top of open standards.

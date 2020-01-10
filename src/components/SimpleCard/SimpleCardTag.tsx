@@ -13,16 +13,16 @@ export const SimpleCardTag: React.FunctionComponent<ISimpleCardTag> = ({ classNa
   return (
     <>
       {text && (
-        <div className={cn(className, 'font-semibold text-blue')}>
+        <div className={cn(className, 'font-semibold text-blue flex items-center flex-1')}>
           {text}
           <Icon icon={['fad', 'arrow-right']} className="ml-3" />
         </div>
       )}
 
       {tag && (
-        <div className={cn(className, `text-sm text-${color} font-semibold`)}>
+        <div className={cn(className, `text-sm text-${color} font-semibold flex`)}>
           <div
-            className={`flex rounded-full border border-${color}-lighter bg-${color}-lightest text-${color} px-4 py-1`}
+            className={`flex items-center px-4 py-1 text-sm font-semibold uppercase border rounded-full border-${color}-lighter bg-${color}-lightest text-${color}`}
           >
             {tag}
           </div>

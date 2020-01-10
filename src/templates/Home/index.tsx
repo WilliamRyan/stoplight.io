@@ -4,16 +4,17 @@ import { withRouteData, withSiteData } from 'react-static';
 
 import { SimpleCardBody } from 'src/components/SimpleCard/SimpleCardBody';
 
+import { Chips, IChips } from 'src/components/Chip';
 import { IFeature } from 'src/components/Features';
 import { SimpleCardBottom } from 'src/components/SimpleCard/SimpleCardBottom';
 import { SimpleCardTag } from 'src/components/SimpleCard/SimpleCardTag';
-import { Title } from 'src/components/SimpleCard/SimpleCardTitle';
+import { SimpleCardTitle } from 'src/components/SimpleCard/SimpleCardTitle';
 import { SimpleCardTop } from 'src/components/SimpleCard/SimpleCardTop';
 import { Container } from '../../components/Container';
-import { CustomerSection } from '../../components/CustomerSection';
+import { ICaseStudyCard } from '../../components/CustomerSection';
 import { Hero, IHero } from '../../components/Hero';
 import { Icon } from '../../components/Icon';
-import { IImage } from '../../components/Image';
+import { Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
 import { ProductCard } from '../../components/ProductCard';
 import { Section } from '../../components/Section';
@@ -24,13 +25,20 @@ export interface IHome {
   color: string;
   hero: IHero;
   testimonials: ITestimonials;
-  customers?: {
-    images: IImage[];
-  };
+  customers?: ICaseStudyCard[];
   features: IFeature[];
+  chips?: IChips;
 }
 
-export const Home: React.FunctionComponent<IHome> = ({ color, hero, customers, testimonials, features }) => {
+export const Home: React.FunctionComponent<IHome> = ({
+  color,
+  hero,
+  customers,
+  testimonials,
+  features,
+  chips,
+  ...sectionProps
+}) => {
   return (
     <Layout>
       <Hero bgColor={color} {...hero} bottomElem={<ProductCards className="pt-24 sm:pt-6" />} />
@@ -48,10 +56,10 @@ export const Home: React.FunctionComponent<IHome> = ({ color, hero, customers, t
             {features && (
               <div className="flex flex-wrap justify-around">
                 {features.map((feature, index) => (
-                  <SimpleCard id={index} className="text-center" iconFeature w="80" href={feature.href}>
+                  <SimpleCard key={index} className="text-center" iconFeature w="80" href={feature.href}>
                     <Icon icon={['fad', feature.icon]} className="text-center" size="3x" style={feature.iconStyle} />
                     <SimpleCardTop>
-                      <Title title={feature.name} />
+                      <SimpleCardTitle title={feature.name} />
                     </SimpleCardTop>
                     <SimpleCardBody summary={feature.summary} />
                     <SimpleCardBottom className="text-center">
@@ -64,7 +72,36 @@ export const Home: React.FunctionComponent<IHome> = ({ color, hero, customers, t
           </Container>
         </Section>
       )}
-      {customers && <CustomerSection images={customers.images} />}
+      {customers && (
+        <Section id="features" {...sectionProps}>
+          <Chips
+            className="justify-center mb-10"
+            segments={[{ color: 'indigo-light', length: 2 }, { color: 'indigo-dark', length: 3 }, { color: 'indigo' }]}
+          />
+          <div className="text-lg font-semibold text-center uppercase text-grey-dark">
+            Stoplight powers some of the world's leading API first companies
+          </div>
+          <Container className="flex flex-wrap justify-between">
+            {customers.map((customer, index) => (
+              <SimpleCard key={index} className="text-left w-96 h-80" hoverable href={customer.href}>
+                <SimpleCardTop>
+                  <Image
+                    src={customer.image}
+                    title={`${customer.company} Logo`}
+                    alt={customer.company}
+                    size="sm"
+                    className="w-2/5 h-10"
+                  />
+                </SimpleCardTop>
+                <SimpleCardBody summary={customer.summary} className="mt-5" />
+                <SimpleCardBottom className="flex items-center pt-6 mt-6 border-t">
+                  <SimpleCardTag tag={customer.tag} text="Read" color={customer.color} className="text-center" />
+                </SimpleCardBottom>
+              </SimpleCard>
+            ))}
+          </Container>
+        </Section>
+      )}
 
       <Testimonials {...testimonials} />
     </Layout>

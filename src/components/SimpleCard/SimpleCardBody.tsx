@@ -7,5 +7,5 @@ export interface ISimpleCardBody {
 }
 
 export const SimpleCardBody: React.FunctionComponent<ISimpleCardBody> = ({ summary, className }) => {
-  return <div className={cn(className, 'flex-1 mt-4 leading-loose text-grey-darker')}>{summary}</div>;
+  return <div className={cn(className, 'flex-1')}>{summary}</div>;
 };

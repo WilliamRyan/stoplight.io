@@ -2,8 +2,16 @@ import cn from 'classnames';
 import * as React from 'react';
 import { withRouteData } from 'react-static';
 
+import { Container } from 'src/components/Container';
+import { SimpleCard } from 'src/components/SimpleCard';
+import { Author } from 'src/components/SimpleCard/Author';
+import { SimpleCardBody } from 'src/components/SimpleCard/SimpleCardBody';
+import { SimpleCardBottom } from 'src/components/SimpleCard/SimpleCardBottom';
+import { SimpleCardTitle } from 'src/components/SimpleCard/SimpleCardTitle';
+import { SimpleCardTop } from 'src/components/SimpleCard/SimpleCardTop';
+
 import { ActionBar, IActionBar } from '../../components/ActionBar';
-import { Businesses, IBusinesses } from '../../components/Businesses';
+import { IBusinesses } from '../../components/Businesses';
 import { Collage, ICollage } from '../../components/Collage';
 import { FeatureSection, FeatureStrip, IFeatureSection } from '../../components/FeatureSection';
 import { Hero, IHero } from '../../components/Hero';
@@ -25,7 +33,7 @@ export interface IAbout {
   hero: IHero;
   team: IMember[];
   actionBar: IActionBar;
-  businesses: IBusinesses;
+  businessQuotes: IBusinesses;
   pressSection: IPressSection;
   collage: ICollage;
   featureSection: IFeatureSection;
@@ -35,10 +43,10 @@ export interface IAbout {
 const Member: React.FunctionComponent<IMember> = ({ image, name, role, isLast }) => {
   return (
     <div className={cn('mb-48 -mt-20 px-10 sm:px-0 sm:w-48', { 'sm:mb-24': isLast })}>
-      <div className="block text-center shadow bg-white py-10 sm:py-4 px-4 sm:px-0 w-64 sm:w-full rounded-lg">
+      <div className="block w-64 px-4 py-10 text-center bg-white rounded-lg shadow sm:py-4 sm:px-0 sm:w-full">
         <Image
           src={image}
-          className="-mt-20 mx-auto rounded-full bg-center bg-contain shadow-sm border-grey border h-32 w-32 mb-10"
+          className="w-32 h-32 mx-auto mb-10 -mt-20 bg-center bg-contain border rounded-full shadow-sm border-grey"
           size="sm"
           useDiv
         />
@@ -54,13 +62,14 @@ const Member: React.FunctionComponent<IMember> = ({ image, name, role, isLast })
 export const About: React.FunctionComponent<IAbout> = ({
   color,
   hero,
-  businesses,
+  businessQuotes,
   team,
   actionBar,
   pressSection,
   collage,
   featureSection,
   valueSection,
+  ...sectionProps
 }) => {
   return (
     <Layout>
@@ -77,9 +86,9 @@ export const About: React.FunctionComponent<IAbout> = ({
 
       {team.length ? (
         <div>
-          <h3 className="text-center text-3xl pb-48 md:mb-14 sm:pb-10 relative">Meet The Team</h3>
+          <h3 className="relative pb-48 text-3xl text-center md:mb-14 sm:pb-10">Meet The Team</h3>
           <div className="bg-grey-lightest z-5 sm:pt-32">
-            <div className="container flex flex-wrap justify-center md:justify-around text-center md:px-0">
+            <div className="container flex flex-wrap justify-center text-center md:justify-around md:px-0">
               {team.map((member, index) => (
                 <Member key={index} isLast={index === team.length - 1} {...member} />
               ))}
@@ -87,16 +96,65 @@ export const About: React.FunctionComponent<IAbout> = ({
           </div>
 
           {actionBar && actionBar.enabled ? (
-            <div className="md:pb-24 -mt-10">
+            <div className="-mt-10 md:pb-24">
               <ActionBar {...actionBar} />
             </div>
           ) : null}
         </div>
       ) : null}
 
-      <PressSection id="press" {...pressSection} />
+      {/* <PressSection id="press" {...pressSection} /> */}
 
-      <Businesses id="businesses" {...businesses} />
+      {/* TO DO: format this strip */}
+
+      {pressSection.articles && (
+        <Section id="press" {...sectionProps}>
+          <div className="mb-20 text-3xl font-bold text-center md:mb-14">In The Press</div>
+          <Container className="flex flex-wrap justify-center">
+            {pressSection.articles.map((press, index) => (
+              <SimpleCard key={index} className="w-1/4 px-6 mb-12 text-left">
+                <SimpleCardTop className="flex items-start px-2 py-2">
+                  <Image
+                    src={press.image}
+                    title={`${press.publication} Logo`}
+                    alt={press.publication}
+                    size="sm"
+                    className="max-h-50"
+                  />
+                  <SimpleCardTitle subtitle={press.date} />
+                </SimpleCardTop>
+                <SimpleCardBody summary={press.description} className="mt-4 mb-5" />
+              </SimpleCard>
+            ))}
+          </Container>
+        </Section>
+      )}
+
+      {/*TO DO: make sure images and summaries are all evenly lined up*/}
+      {businessQuotes.quotes && (
+        <Section id="customers" {...sectionProps}>
+          <div className="mb-20 text-3xl font-bold text-center md:mb-14">Businesses Love Stoplight</div>
+          <Container className="flex flex-wrap justify-between">
+            {businessQuotes.quotes.map((business, index) => (
+              <SimpleCard key={index} className="text-left w-96">
+                <SimpleCardTop className="flex items-start px-2 py-2">
+                  <Image
+                    src={business.image}
+                    title={`${business.company} Logo`}
+                    alt={business.company}
+                    size="sm"
+                    className="max-h-50"
+                  />
+                </SimpleCardTop>
+                <SimpleCardBody summary={business.quote} className="mt-4 mb-5" />
+                <SimpleCardBottom className="mb-4">
+                  <Author name={business.author} meta={business.role} />
+                </SimpleCardBottom>
+              </SimpleCard>
+            ))}
+          </Container>
+        </Section>
+      )}
 
       <Collage id="investors" {...collage} />
     </Layout>
