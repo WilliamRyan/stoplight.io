@@ -28,20 +28,8 @@ export const DemoForm: React.FunctionComponent<IDemoForm> = ({ hero, testimonial
           bottomElem={
             <div className="container relative pb-64 mx-auto -mt-64 pt-80 z-5">
               <LeftContentForm className="">
-                <ContentBlock className="flex flex-wrap justify-center w-full h-full max-w-lg sm:w-full sm:content-center">
-                  <HubSpotForm
-                    className="w-full h-full max-w-lg p-8 pt-12 bg-white rounded-lg "
-                    portalId={hubspot.portalId}
-                    formId={hubspot.formId}
-                    style={{ top: 100 }}
-                  >
-                    <div className="pb-12 text-4xl font-bold leading-tight text-center text-grey-darkest sm:pt-14 md:text-4xl">
-                      Request a Demo
-                    </div>
-                  </HubSpotForm>
-                </ContentBlock>
                 {testimonials && (
-                  <ContentBlock className="w-auto pl-24 sm:w-100 sm:items-center sm:text-center sm:pr-0">
+                  <ContentBlock className="w-auto pr-24 sm:w-100 sm:items-center sm:text-center sm:pr-0">
                     {testimonials.map((testimonial, index) => (
                       <Testimonial
                         key={index}
@@ -55,6 +43,18 @@ export const DemoForm: React.FunctionComponent<IDemoForm> = ({ hero, testimonial
                     ))}
                   </ContentBlock>
                 )}
+                <ContentBlock className="flex flex-wrap justify-center w-full h-full max-w-lg sm:w-full sm:content-center">
+                  <HubSpotForm
+                    className="w-full h-full max-w-lg p-8 pt-12 bg-white rounded-lg "
+                    portalId={hubspot.portalId}
+                    formId={hubspot.formId}
+                    style={{ top: 100 }}
+                  >
+                    <div className="pb-12 text-4xl font-bold leading-tight text-center text-grey-darkest sm:pt-14 md:text-4xl">
+                      Request a Demo
+                    </div>
+                  </HubSpotForm>
+                </ContentBlock>
               </LeftContentForm>
             </div>
           }

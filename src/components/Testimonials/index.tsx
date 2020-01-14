@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import * as React from 'react';
 
 import { ActionBar, IActionBar } from '../ActionBar';
@@ -12,6 +13,7 @@ export interface ITestimonial {
   author: string;
   company: string;
   role: string;
+  className?: string;
 }
 
 export interface ITestimonials {
@@ -21,17 +23,26 @@ export interface ITestimonials {
   actionBar: IActionBar;
 }
 
-export const Testimonial: React.FunctionComponent<ITestimonial> = ({ image, quote, author, company, role }) => {
+export const Testimonial: React.FunctionComponent<ITestimonial> = ({
+  image,
+  quote,
+  author,
+  company,
+  role,
+  className,
+}) => {
   return (
-    <div className="w-1/2 sm:w-full flex px-14 pb-20 sm:px-0 sm:px-10">
-      <div className="max-w-lg w-full lg:flex shadow-md mx-auto items-stretch bg-white relative rounded-lg">
+    <div className={cn(className, '')}>
+      {/* <div className={cn(className, 'w-1/2 sm:w-full flex px-14 pb-20 sm:px-0 sm:px-10')}> */}
+
+      <div className="relative items-stretch w-full max-w-lg mx-auto bg-white rounded-lg shadow-md lg:flex">
         {!image && (
-          <Icon className="absolute text-grey h-10" style={{ top: -15, left: -15, fontSize: 30 }} icon="quote-left" />
+          <Icon className="absolute h-10 text-grey" style={{ top: -15, left: -15, fontSize: 30 }} icon="quote-left" />
         )}
 
         {!image && (
           <Icon
-            className="absolute text-grey h-10"
+            className="absolute h-10 text-grey"
             style={{ bottom: -15, right: -15, fontSize: 30 }}
             icon="quote-right"
           />
@@ -39,14 +50,14 @@ export const Testimonial: React.FunctionComponent<ITestimonial> = ({ image, quot
 
         {image && (
           <div className="flex flex-col justify-center sm:items-center sm:pt-8">
-            <Image src={image} className="-ml-12 sm:ml-0 rounded-full bg-cover shadow h-32 w-32" size="sm" useDiv />
+            <Image src={image} className="w-32 h-32 -ml-12 bg-cover rounded-full shadow sm:ml-0" size="sm" useDiv />
           </div>
         )}
 
-        <div className="p-8 flex flex-col justify-center leading-normal">
-          <p className="text-grey-darker leading-loose flex-1">{quote}</p>
+        <div className="flex flex-col justify-center p-8 leading-normal">
+          <p className="flex-1 leading-loose text-grey-darker">{quote}</p>
 
-          <p className="font-bold mt-4">
+          <p className="mt-4 font-bold">
             {author}
             {company && `, ${company}`}
             {role && `, ${role}`}
@@ -77,7 +88,7 @@ export const Testimonials: React.FunctionComponent<ITestimonials> = ({
           segments: [{ color: 'orange-light', length: 2 }, { color: 'orange-dark', length: 4 }, { color: 'orange' }],
         }}
       >
-        <div className="uppercase text-grey-dark font-semibold text-center text-lg">API First Companies Love Us</div>
+        <div className="text-lg font-semibold text-center uppercase text-grey-dark">API First Companies Love Us</div>
 
         <div className="flex flex-wrap mt-14">
           {testimonials.map((testimonial, index) => {
@@ -86,7 +97,7 @@ export const Testimonials: React.FunctionComponent<ITestimonials> = ({
         </div>
       </Container>
 
-      {actionBar && actionBar.enabled ? <ActionBar className="sm:mt-12 mt-16" {...actionBar} /> : null}
+      {actionBar && actionBar.enabled ? <ActionBar className="mt-16 sm:mt-12" {...actionBar} /> : null}
     </Section>
   );
 };

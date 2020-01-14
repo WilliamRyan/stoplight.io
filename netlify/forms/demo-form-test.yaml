@@ -1,10 +1,7 @@
-path: /demo
+path: /demo-form-test
 hero:
   particles: true
-  # skew: rounded
   title: On average, adopting Stoplight results in a 36% gain in API development efficiency, and increases API quality by 30%.
-  # subtitle: >-
-  #   On average, adopting Stoplight results in a 36% gain in API development efficiency, and increases API quality by 30%.
 color: black
 hubspot:
   formId: 7ae2bb42-67a6-4ee3-9ac5-ff21d87812ea
