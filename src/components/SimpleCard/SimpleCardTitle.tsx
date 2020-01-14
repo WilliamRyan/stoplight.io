@@ -9,7 +9,7 @@ export interface ISimpleCardTitle {
 
 export const SimpleCardTitle: React.FunctionComponent<ISimpleCardTitle> = ({ title, subtitle, className }) => {
   return (
-    <div className={cn(className, 'flex-1 mt-5 font-bold text-grey-darkest')}>
+    <div className={cn(className)}>
       {title && <p className="text-xl text-center">{title}</p>}
       {subtitle && <p className="text-left uppercase">{subtitle}</p>}
     </div>

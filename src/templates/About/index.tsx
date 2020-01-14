@@ -10,16 +10,15 @@ import { SimpleCardBottom } from 'src/components/SimpleCard/SimpleCardBottom';
 import { SimpleCardTitle } from 'src/components/SimpleCard/SimpleCardTitle';
 import { SimpleCardTop } from 'src/components/SimpleCard/SimpleCardTop';
 
+import { IBusinesses, IPressSection } from 'src/types';
 import { ActionBar, IActionBar } from '../../components/ActionBar';
-import { IBusinesses } from '../../components/Businesses';
 import { Collage, ICollage } from '../../components/Collage';
 import { FeatureSection, FeatureStrip, IFeatureSection } from '../../components/FeatureSection';
 import { Hero, IHero } from '../../components/Hero';
 import { Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
-import { IPressSection, PressSection } from '../../components/PressSection';
 import { Section } from '../../components/Section';
-import { IValueSection, ValueSection } from '../../components/Value';
+import { IValueSection } from '../../components/Value';
 
 export interface IMember {
   image: string;
@@ -79,9 +78,6 @@ export const About: React.FunctionComponent<IAbout> = ({
         <FeatureStrip features={featureSection.features} />
       </Section>
 
-      {/* commenting out values section while we wait to solidify company values */}
-      {/* {valueSection.values && <ValueSection values={valueSection.values} />} */}
-
       <FeatureSection color={color} {...featureSection} />
 
       {team.length ? (
@@ -103,50 +99,52 @@ export const About: React.FunctionComponent<IAbout> = ({
         </div>
       ) : null}
 
-      {/* <PressSection id="press" {...pressSection} /> */}
-
-      {/* TO DO: format this strip */}
-
       {pressSection.articles && (
         <Section id="press" {...sectionProps}>
           <div className="mb-20 text-3xl font-bold text-center md:mb-14">In The Press</div>
-          <Container className="flex flex-wrap justify-center">
+          <Container className="flex flex-wrap justify-center" cta={pressSection.cta}>
             {pressSection.articles.map((press, index) => (
-              <SimpleCard key={index} className="w-1/4 px-6 mb-12 text-left">
-                <SimpleCardTop className="flex items-start px-2 py-2">
-                  <Image
-                    src={press.image}
-                    title={`${press.publication} Logo`}
-                    alt={press.publication}
-                    size="sm"
-                    className="max-h-50"
-                  />
-                  <SimpleCardTitle subtitle={press.date} />
-                </SimpleCardTop>
-                <SimpleCardBody summary={press.description} className="mt-4 mb-5" />
+              <SimpleCard key={index} className="flex px-6 mb-12 w-80">
+                <div className="h-64 px-6 pb-6 bg-white rounded-lg shadow cursor-pointer text-grey-darker hover:bg-grey-lightest">
+                  <SimpleCardTop className="flex items-start h-10 px-2 py-10">
+                    <div className="flex items-start items-center justify-center h-32">
+                      <Image
+                        src={press.image}
+                        title={`${press.publication} Logo`}
+                        alt={press.publication}
+                        size="sm"
+                        className="h-10"
+                      />
+                    </div>
+
+                    <SimpleCardTitle subtitle={press.date} className="mt-3 mb-3 font-bold uppercase" />
+                  </SimpleCardTop>
+                  <SimpleCardBody description={press.description} className="flex-1 mb-5 mt-14" />
+                </div>
               </SimpleCard>
             ))}
           </Container>
         </Section>
       )}
 
-      {/*TO DO: make sure images and summaries are all evenly lined up*/}
       {businessQuotes.quotes && (
         <Section id="customers" {...sectionProps}>
           <div className="mb-20 text-3xl font-bold text-center md:mb-14">Businesses Love Stoplight</div>
-          <Container className="flex flex-wrap justify-between">
+          <Container className="flex flex-wrap justify-center -mb-12">
             {businessQuotes.quotes.map((business, index) => (
-              <SimpleCard key={index} className="text-left w-96">
+              <SimpleCard key={index} className="flex flex-col px-6 py-8 mx-5 mb-12 bg-white rounded-lg shadow w-96">
                 <SimpleCardTop className="flex items-start px-2 py-2">
-                  <Image
-                    src={business.image}
-                    title={`${business.company} Logo`}
-                    alt={business.company}
-                    size="sm"
-                    className="max-h-50"
-                  />
+                  <div className="flex items-start justify-center h-12 px-2 py-2 pb-8 m-auto">
+                    <Image
+                      src={business.image}
+                      title={`${business.company} Logo`}
+                      alt={business.company}
+                      size="sm"
+                      className="h-12"
+                    />
+                  </div>
                 </SimpleCardTop>
-                <SimpleCardBody summary={business.quote} className="mt-4 mb-5" />
+                <SimpleCardBody description={business.description} className="flex-1 mt-4 mb-5" />
                 <SimpleCardBottom className="mb-4">
                   <Author name={business.author} meta={business.role} />
                 </SimpleCardBottom>

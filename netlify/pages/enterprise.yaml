@@ -36,77 +36,77 @@ actionBar:
       title: Book a Demo
   enabled: true
   text: Ready to go API First with the Stoplight Enterprise Platform?
-customers:
+caseStudies:
   - company: Arkea
     href: /case-studies/arkea
     image: /images/logo_arkea_transparent.png
-    summary: Arkéa has been involved in open banking for several years by providing white label banking services and saw PSD2 as an opportunity to extend their open banking features.
+    description: Arkéa has been involved in open banking for several years by providing white label banking services and saw PSD2 as an opportunity to extend their open banking features.
     tag: Finance
     color: orange
   - company: Namely
     href: /case-studies/namely
     image: /images/logo_namely_transparent.png
-    summary: Namely’s chief objective was to adopt API Design First principles. As they applied their new principle, they realized the importance of reliable, up to date, documentation.
+    description: Namely’s chief objective was to adopt API Design First principles. As they applied their new principle, they realized the importance of reliable, up to date, documentation.
     tag: HR
     color: indigo
   - company: Appointment Plus
     href: /case-studies/appointmentplus
     image: /images/logo_appointmentplus_transparent.png
-    summary: AppointmentPlus was managing multiple APIs built by different teams, at different times, with different strategies and intents.
+    description: AppointmentPlus was managing multiple APIs built by different teams, at different times, with different strategies and intents.
     tag: Tech
     color: green
 features:
   - name: Explorer
-    summary: The single source of truth for all your API related assets.
+    description: The single source of truth for all your API related assets.
     href:
     icon: 'chart-network'
     iconStyle:
       '--fa-primary-color': 'dodgerblue'
       '--fa-secondary-color': 'limegreen'
   - name: Design Libraries
-    summary: Define standard representations of your primary domain objects for easy re-use.
+    description: Define standard representations of your primary domain objects for easy re-use.
     href:
     icon: 'layer-group'
     iconStyle:
       '--fa-primary-color': 'orange'
       '--fa-secondary-color': 'red'
   - name: API Style Guides
-    summary: Style guides increase API quality and consistency.
+    description: Style guides increase API quality and consistency.
     href:
     icon: 'pencil-ruler'
     iconStyle:
       '--fa-primary-color': 'skyblue'
       '--fa-secondary-color': 'steelblue'
   - name: Internal Docs
-    summary: Technical docs for the entire company.
+    description: Technical docs for the entire company.
     href:
     icon: 'book'
     iconStyle:
       '--fa-primary-color': 'salmon'
       '--fa-secondary-color': 'darksalmon'
   - name: External Docs
-    summary: Publish docs for your customers and external stakeholders.
+    description: Publish docs for your customers and external stakeholders.
     href:
     icon: 'book-open'
     iconStyle:
       '--fa-primary-color': 'indianred'
       '--fa-secondary-color': 'indianred'
   - name: Git Integrations
-    summary: Seamlessly integrates with Github, Bitbucket, and Gitlab.
+    description: Seamlessly integrates with Github, Bitbucket, and Gitlab.
     href:
     icon: 'code-branch'
     iconStyle:
       '--fa-primary-color': 'dodgerblue'
       '--fa-secondary-color': 'limegreen'
   - name: SSO Integrations
-    summary: Connect your identity provider.
+    description: Connect your identity provider.
     href:
     icon: 'shield'
     iconStyle:
       '--fa-primary-color': 'tomato'
       '--fa-secondary-color': 'tomato'
   - name: On-Premise
-    summary: Runs where you want - hybrid cloud or in your data center.
+    description: Runs where you want - hybrid cloud or in your data center.
     href:
     icon: 'server'
     iconStyle:

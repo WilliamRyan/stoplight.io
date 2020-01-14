@@ -6,5 +6,5 @@ export interface ISimpleCardBottom {
 }
 
 export const SimpleCardBottom: React.FunctionComponent<ISimpleCardBottom> = ({ children, className }) => {
-  return <div className={cn(className, 'flex flex-row text-normal')}>{children}</div>;
+  return <div className={cn(className, 'h-10')}>{children}</div>;
 };

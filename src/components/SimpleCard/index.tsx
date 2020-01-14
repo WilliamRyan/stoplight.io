@@ -12,22 +12,12 @@ export interface ISimpleCard {
   w?: string;
 }
 
-export const SimpleCard: React.FunctionComponent<ISimpleCard> = ({
-  className,
-  href,
-  onClick,
-  hoverable,
-  children,
-  iconFeature,
-  w = '96',
-}) => {
+export const SimpleCard: React.FunctionComponent<ISimpleCard> = ({ className, href, hoverable, children }) => {
   const card = (
     <div
-      className={cn(`w-${w}`, 'flex flex-col mt-14 sm:pt-14', className, {
-        'bg-white rounded-lg p-8 pb-6 sm:mb-8 shadow-md hover-scale text-grey-darker leading-loose': hoverable,
-        'px-5': !hoverable,
-        'items-center text-grey-dark font-medium my-2': (href && !hoverable) || iconFeature,
-        'bg-white rounded-lg p-8 pb-6 sm:mb-8 shadow-md': !hoverable && !href && !iconFeature,
+      className={cn('flex flex-col', className, {
+        'rounded-lg shadow hover-scale': hoverable,
+        'cursor-pointer': href,
       })}
     >
       {children}

@@ -15,17 +15,6 @@ featureSection:
     up your time to market and lead to more consistent, higher quality 
     microservice and IoT applications.
   features:
-    # - description: >-
-    #     In 2014, Marc MacLeod worked as an independent software consultant
-    #     in Los Angeles building Application Programming Interfaces, known as APIs,
-    #     for companies. MacLeod noticed that many of the APIs, which are systems of
-    #     tools and resources in an operating system that enable developers to create
-    #     software applications, lacked documentation and were poorly built. So, MacLeod
-    #     created a set of tools to serve as a blueprint for how to build better APIs,
-    #     and those tools became the foundation behind Stoplight.
-    #   image: /images/team/marc-and-tom.png
-    #   shortName: Our History
-    #   title: Our History
     - description: >-
         Headquartered in Austin, Texas, our team hails from across the US and Europe, 
         and is united by our passion for APIs. From skeeball champions to rock climbers, 
@@ -128,7 +117,7 @@ businessQuotes:
     - author: Evin Callahan
       company: Hudya
       image: /images/hudya_logo.png
-      quote: >-
+      description: >-
         Having all the tools to model, test, and document our API in one place,
         and integrating it nicely along the entire CI/CD workflow process has
         been extremely helpful for us.
@@ -136,7 +125,7 @@ businessQuotes:
     - author: Josh Flyer
       company: AppointmentPlus
       image: /images/appointment_plus_logo.png
-      quote: >-
+      description: >-
         We really enjoy the modeling feature, helping us define our API before
         even writing code. Also, the way the modeling feature inherits models
         from other Projects. Hubs integrates with OAS files, both partials or
@@ -145,7 +134,7 @@ businessQuotes:
     - author: Carlos Lozano
       company: GFT Group
       image: /images/gft_group_logo.jpg
-      quote: >-
+      description: >-
         Stoplight is getting better all the time. Big leap from [Stoplight]
         Classic.
       role: Senior Enterprise Architect
