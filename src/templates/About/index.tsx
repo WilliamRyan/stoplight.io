@@ -12,18 +12,15 @@ import { SimpleCardTop } from 'src/components/SimpleCard/SimpleCardTop';
 import { IBusinesses, IPressSection } from 'src/types';
 import { ActionBar, IActionBar } from '../../components/ActionBar';
 import { Collage, ICollage } from '../../components/Collage';
-import { Container } from '../../components/Container';
 import { Feature } from '../../components/FeatureSection';
 import { Hero, IHero } from '../../components/Hero';
 import { Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
 
+import { Chips } from '../../components/Chip';
 import { IMember, Member } from '../../components/MemberCard';
-import { IPressSection, PressSection } from '../../components/PressSection';
 import { Section } from '../../components/Section';
 import { IValue, Value } from '../../components/Value';
-import { Chips } from '../../components/Chip';
-
 
 export interface IAbout {
   color: string;
@@ -37,12 +34,6 @@ export interface IAbout {
   press: IPressSection;
   collage: ICollage;
 }
-
-<!--   team: IMember[];
-  actionBar: IActionBar;
-  businessQuotes: IBusinesses;
-  pressSection: IPressSection; -->
-
 
 interface ISection {
   title: string;
@@ -59,10 +50,6 @@ interface ITeamSection extends ISection {
   actionBar: IActionBar;
 }
 
-<!--  businessQuotes, -->
-<!-- featureSection,
-  valueSection,
-  ...sectionProps -->
 export const About: React.FunctionComponent<IAbout> = ({
   color,
   hero,
@@ -74,6 +61,7 @@ export const About: React.FunctionComponent<IAbout> = ({
   press,
   businesses,
   collage,
+  ...sectionProps
 }) => {
   return (
     <Layout header={{ pinnedColor: 'black' }}>
@@ -146,13 +134,12 @@ export const About: React.FunctionComponent<IAbout> = ({
         </Container>
       </Section>
 
-
-      {pressSection.articles && (
+      {press.articles && (
         <Section id="press" {...sectionProps}>
           <div className="mb-20 text-3xl font-bold text-center md:mb-14">In The Press</div>
-          <Container className="flex flex-wrap justify-center" cta={pressSection.cta}>
-            {pressSection.articles.map((press, index) => (
-              <SimpleCard key={index} className="flex px-6 mb-12 w-80">
+          <Container className="flex flex-wrap justify-center" cta={press.cta}>
+            {press.articles.map((press, index) => (
+              <SimpleCard key={index} className="flex px-6 mb-6 w-80">
                 <div className="h-64 px-6 pb-6 bg-white rounded-lg shadow cursor-pointer text-grey-darker hover:bg-grey-lightest">
                   <SimpleCardTop className="flex items-start h-10 px-2 py-10">
                     <div className="flex items-start items-center justify-center h-32">
@@ -174,19 +161,16 @@ export const About: React.FunctionComponent<IAbout> = ({
           </Container>
         </Section>
       )}
-        <Chips
-        segments={[
-          { color: 'blue', length: 3 },
-          { color: 'blue-lighter', length: 2 },
-        ]}
+      <Chips
+        segments={[{ color: 'blue', length: 3 }, { color: 'blue-lighter', length: 2 }]}
         className="justify-center"
       />
 
-      {businessQuotes.quotes && (
+      {businesses.quotes && (
         <Section id="customers" {...sectionProps}>
           <div className="mb-20 text-3xl font-bold text-center md:mb-14">Businesses Love Stoplight</div>
           <Container className="flex flex-wrap justify-center -mb-12">
-            {businessQuotes.quotes.map((business, index) => (
+            {businesses.quotes.map((business, index) => (
               <SimpleCard key={index} className="flex flex-col px-6 py-8 mx-5 mb-12 bg-white rounded-lg shadow w-96">
                 <SimpleCardTop className="flex items-start px-2 py-2">
                   <div className="flex items-start justify-center h-12 px-2 py-2 pb-8 m-auto">
