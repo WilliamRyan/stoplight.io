@@ -1,7 +1,6 @@
 import cn from 'classnames';
 import * as React from 'react';
 
-import { Chips } from '../Chip';
 import { Container, IContainer } from '../Container';
 import { Icon, IconProp } from '../Icon';
 import { IImage, Image } from '../Image';

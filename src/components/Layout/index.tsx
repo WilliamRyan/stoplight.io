@@ -6,8 +6,8 @@ import Header, { IHeader } from 'src/components/Header';
 import { BannerVisibilityProvider } from '../../hooks/useBanner';
 
 export interface ILayout {
-  header?: IHeader;
-  footer?: IFooterProps;
+  header?: Partial<IHeader>;
+  footer?: Partial<IFooterProps>;
 }
 
 export const Layout: React.FunctionComponent<ILayout> = ({ children, header, footer }) => {

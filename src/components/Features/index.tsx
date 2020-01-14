@@ -19,6 +19,7 @@ export interface IFeature {
   };
   summary: string;
   href?: string;
+  className?: string;
 }
 
 export const Features: React.FunctionComponent<IFeatures> = ({ features, className }) => {
@@ -31,7 +32,7 @@ export const Features: React.FunctionComponent<IFeatures> = ({ features, classNa
   );
 };
 
-export const Feature: React.FunctionComponent<IFeature> = ({ name, summary, icon, href, iconStyle }) => {
+export const Feature: React.FunctionComponent<IFeature> = ({ name, summary, icon, href, iconStyle, className }) => {
   return (
     <div className="w-80 text-center px-5 mt-14 sm:pt-14">
       <Link to={href}>

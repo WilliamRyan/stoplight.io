@@ -34,11 +34,11 @@ export const Quote = ({ image, quote, author, role }) => {
   );
 };
 
-export const Businesses: React.FunctionComponent<IBusinesses> = ({ id, title, quotes, cta }) => {
+export const Businesses: React.FunctionComponent<IBusinesses> = ({ id, title, quotes, cta, ...sectionProps }) => {
   if (!quotes || !quotes.length) return null;
 
   return (
-    <Section id={id}>
+    <Section id={id} {...sectionProps}>
       <Container title={title} cta={cta}>
         <div className="flex flex-wrap justify-center -mb-12">
           {quotes.map((item, key) => {

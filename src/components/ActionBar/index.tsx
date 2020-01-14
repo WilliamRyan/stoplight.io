@@ -1,6 +1,5 @@
 import cn from 'classnames';
 import * as React from 'react';
-import { withSiteData } from 'react-static';
 
 import { CallToAction, ICallToAction } from '../CallToAction';
 import { Container } from '../Container';
@@ -12,7 +11,7 @@ export interface IActionBar {
   className?: string;
 }
 
-export const ActionBar: React.FunctionComponent<IActionBar> = withSiteData(props => {
+export const ActionBar: React.FunctionComponent<IActionBar> = props => {
   const { enabled, text, ctas, className } = props;
 
   if (!enabled) {
@@ -57,4 +56,4 @@ export const ActionBar: React.FunctionComponent<IActionBar> = withSiteData(props
       </div>
     </Container>
   );
-});
+};

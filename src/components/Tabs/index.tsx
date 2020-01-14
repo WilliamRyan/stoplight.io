@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import * as React from 'react';
-import { withRouteData } from 'react-static';
+import { useRouteData } from 'react-static';
 
 import { Link } from '../Link';
 
@@ -36,16 +36,17 @@ export const Tab: React.FunctionComponent<ITab> = ({ isActive, href, title }) =>
   );
 };
 
-export const Tabs: React.FunctionComponent<ITabs> = withRouteData(({ tabs, path, className }) => {
+export const Tabs = ({ tabs, className }) => {
+  const { path } = useRouteData();
   const reg = new RegExp(`^${path}$`);
 
   return (
     <div className={cn(className, 'relative z-5 border-b-4 border-lighten-300')}>
-      <div className="container flex flex-no-wrap w-full md:flex-col md:text-center -mb-1 pb-1 md:-mb-2 sm:-mt-14">
+      <div className="container flex flex-no-wrap w-full pb-1 -mb-1 md:flex-col md:text-center md:-mb-2 sm:-mt-14">
         {tabs.map(tab => (
           <Tab key={tab.href} isActive={reg.test(tab.href)} {...tab} />
         ))}
       </div>
     </div>
   );
-});
+};

@@ -36,13 +36,10 @@ export interface IFooter {
 export interface IFooterProps {
   bg?: string;
   noBorder?: boolean;
+  footer: IFooter;
 }
 
-export const Footer: React.FunctionComponent<{ footer: IFooter } & IFooterProps> = ({
-  footer,
-  bg = 'black',
-  noBorder,
-}) => {
+export const Footer: React.FunctionComponent<IFooterProps> = ({ footer, bg = 'black', noBorder }) => {
   const { columns, social, legal } = footer;
 
   return (
@@ -51,7 +48,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter } & IFooterProps>
         'border-t-4 border-lighten-300': !noBorder,
       })}
     >
-      <nav className="container mx-auto flex flex-col items-center" style={{ maxWidth: 1000 }}>
+      <nav className="container flex flex-col items-center mx-auto" style={{ maxWidth: 1000 }}>
         <div className="py-4">
           <Link to="/">
             <Image className="h-16 hover:opacity-75" src="/images/robot-dude.svg" alt="Logo" />
@@ -59,11 +56,11 @@ export const Footer: React.FunctionComponent<{ footer: IFooter } & IFooterProps>
         </div>
 
         {columns && (
-          <div className="flex flex-wrap justify-between py-8 w-full">
+          <div className="flex flex-wrap justify-between w-full py-8">
             {columns.map((column, index) => {
               return (
                 <div key={index}>
-                  <div className="font-bold text-grey-light py-2">{column.title}</div>
+                  <div className="py-2 font-bold text-grey-light">{column.title}</div>
 
                   {column.links &&
                     column.links.map((link, columnIndex) => {
@@ -71,7 +68,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter } & IFooterProps>
                         <Link
                           key={columnIndex}
                           to={link.href}
-                          className="cursor-pointer text-grey hover:text-grey-lighter block py-2"
+                          className="block py-2 cursor-pointer text-grey hover:text-grey-lighter"
                         >
                           {link.title}
                         </Link>
@@ -83,8 +80,8 @@ export const Footer: React.FunctionComponent<{ footer: IFooter } & IFooterProps>
           </div>
         )}
 
-        <div className="flex flex-wrap justify-around py-8 w-full">
-          <Link className="block text-grey pr-4" to="/">
+        <div className="flex flex-wrap justify-around w-full py-8">
+          <Link className="block pr-4 text-grey" to="/">
             &copy; {new Date().getFullYear()} Stoplight
           </Link>
 
@@ -101,7 +98,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter } & IFooterProps>
                   elems.unshift(
                     <span key={`${index}-sep`} className="mx-2">
                       |
-                    </span>
+                    </span>,
                   );
                 }
 
@@ -133,4 +130,4 @@ export const Footer: React.FunctionComponent<{ footer: IFooter } & IFooterProps>
   );
 };
 
-export default withSiteData(Footer);
+export default withSiteData<any, any>(Footer);

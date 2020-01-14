@@ -1,4 +1,3 @@
-import cn from 'classnames';
 import * as React from 'react';
 import { withRouteData } from 'react-static';
 
@@ -13,91 +12,140 @@ import { SimpleCardTop } from 'src/components/SimpleCard/SimpleCardTop';
 import { IBusinesses, IPressSection } from 'src/types';
 import { ActionBar, IActionBar } from '../../components/ActionBar';
 import { Collage, ICollage } from '../../components/Collage';
-import { FeatureSection, FeatureStrip, IFeatureSection } from '../../components/FeatureSection';
+import { Container } from '../../components/Container';
+import { Feature } from '../../components/FeatureSection';
 import { Hero, IHero } from '../../components/Hero';
 import { Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
-import { Section } from '../../components/Section';
-import { IValueSection } from '../../components/Value';
 
-export interface IMember {
-  image: string;
-  name: string;
-  role: string;
-  isLast: boolean;
-}
+import { IMember, Member } from '../../components/MemberCard';
+import { IPressSection, PressSection } from '../../components/PressSection';
+import { Section } from '../../components/Section';
+import { IValue, Value } from '../../components/Value';
+import { Chips } from '../../components/Chip';
+
 
 export interface IAbout {
   color: string;
   hero: IHero;
-  team: IMember[];
-  actionBar: IActionBar;
-  businessQuotes: IBusinesses;
-  pressSection: IPressSection;
+  mission: ISection;
+  coreValues: ICoreValues;
+  socialGood: ISection;
+  careers: ISection;
+  team: ITeamSection;
+  businesses: IBusinesses;
+  press: IPressSection;
   collage: ICollage;
-  featureSection: IFeatureSection;
-  valueSection: IValueSection;
 }
 
-const Member: React.FunctionComponent<IMember> = ({ image, name, role, isLast }) => {
-  return (
-    <div className={cn('mb-48 -mt-20 px-10 sm:px-0 sm:w-48', { 'sm:mb-24': isLast })}>
-      <div className="block w-64 px-4 py-10 text-center bg-white rounded-lg shadow sm:py-4 sm:px-0 sm:w-full">
-        <Image
-          src={image}
-          className="w-32 h-32 mx-auto mb-10 -mt-20 bg-center bg-contain border rounded-full shadow-sm border-grey"
-          size="sm"
-          useDiv
-        />
+<!--   team: IMember[];
+  actionBar: IActionBar;
+  businessQuotes: IBusinesses;
+  pressSection: IPressSection; -->
 
-        <div className="font-bold uppercase text-green">{name}</div>
 
-        {role && <div className="pt-2 text-black">{role}</div>}
-      </div>
-    </div>
-  );
-};
+interface ISection {
+  title: string;
+  description: string;
+  image: string;
+}
 
+interface ICoreValues extends ISection {
+  values: IValue[];
+}
+
+interface ITeamSection extends ISection {
+  members: IMember[];
+  actionBar: IActionBar;
+}
+
+<!--  businessQuotes, -->
+<!-- featureSection,
+  valueSection,
+  ...sectionProps -->
 export const About: React.FunctionComponent<IAbout> = ({
   color,
   hero,
-  businessQuotes,
+  mission,
+  coreValues,
+  socialGood,
+  careers,
   team,
-  actionBar,
-  pressSection,
+  press,
+  businesses,
   collage,
-  featureSection,
-  valueSection,
-  ...sectionProps
 }) => {
   return (
-    <Layout>
-      <Hero key="hero" bgColor={color} greyBg {...hero} />
+    <Layout header={{ pinnedColor: 'black' }}>
+      <Hero key="hero" bgColor={color} title={hero.title} subtitle={hero.subtitle} ctas={hero.ctas} />
 
-      <Section noPadding>
-        <FeatureStrip features={featureSection.features} />
+      <Section id="mission" noPaddingB>
+        <Container className="pb-32 border-b" title={mission.title}>
+          <div
+            className="flex max-w-lg mx-auto text-lg leading-loose text-center"
+            dangerouslySetInnerHTML={{ __html: mission.description }}
+          />
+        </Container>
       </Section>
 
-      <FeatureSection color={color} {...featureSection} />
+      <Section id="core-values" noPaddingB>
+        <Container className="pb-32 border-b" title={coreValues.title}>
+          <div
+            className="flex max-w-lg mx-auto mb-20 text-lg leading-loose text-center"
+            dangerouslySetInnerHTML={{ __html: coreValues.description }}
+          />
 
-      {team.length ? (
-        <div>
-          <h3 className="relative pb-48 text-3xl text-center md:mb-14 sm:pb-10">Meet The Team</h3>
-          <div className="bg-grey-lightest z-5 sm:pt-32">
-            <div className="container flex flex-wrap justify-center text-center md:justify-around md:px-0">
-              {team.map((member, index) => (
-                <Member key={index} isLast={index === team.length - 1} {...member} />
-              ))}
-            </div>
+          <div className="flex flex-wrap justify-around">
+            {coreValues.values.map((value, index) => (
+              <Value
+                key={index}
+                icon={value.icon}
+                iconStyle={value.iconStyle}
+                title={value.title}
+                summary={value.summary}
+              />
+            ))}
+          </div>
+        </Container>
+      </Section>
+
+      <Section id="social-good" noPaddingB>
+        <Container className="pb-32 border-b">
+          <Feature title={socialGood.title} description={socialGood.description} image={socialGood.image} />
+
+          <Feature title={careers.title} description={careers.description} image={careers.image} isReversed />
+        </Container>
+      </Section>
+
+      <Section id="team">
+        <Container title={team.title}>
+          <div
+            className="flex max-w-lg mx-auto mb-20 text-lg leading-loose text-center"
+            dangerouslySetInnerHTML={{ __html: team.description }}
+          />
+
+          <Image src={team.image} className="mb-40 bg-cover rounded-lg shadow" useDiv style={{ height: 500 }} />
+
+          <div className="flex flex-wrap">
+            {team.members.map((member, index) => (
+              <Member
+                key={index}
+                isLast={index === team.members.length - 1}
+                image={member.image}
+                name={member.name}
+                role={member.role}
+              />
+            ))}
           </div>
 
-          {actionBar && actionBar.enabled ? (
-            <div className="-mt-10 md:pb-24">
-              <ActionBar {...actionBar} />
+          {team.actionBar && (
+            <div className="md:pb-24">
+              <ActionBar text={team.actionBar.text} ctas={team.actionBar.ctas} enabled={team.actionBar.enabled} />
             </div>
-          ) : null}
-        </div>
-      ) : null}
+          )}
+        </Container>
+      </Section>
+
 
       {pressSection.articles && (
         <Section id="press" {...sectionProps}>
@@ -126,6 +174,13 @@ export const About: React.FunctionComponent<IAbout> = ({
           </Container>
         </Section>
       )}
+        <Chips
+        segments={[
+          { color: 'blue', length: 3 },
+          { color: 'blue-lighter', length: 2 },
+        ]}
+        className="justify-center"
+      />
 
       {businessQuotes.quotes && (
         <Section id="customers" {...sectionProps}>
@@ -154,7 +209,16 @@ export const About: React.FunctionComponent<IAbout> = ({
         </Section>
       )}
 
-      <Collage id="investors" {...collage} />
+      <Chips
+        segments={[
+          { color: 'orange-dark', length: 1 },
+          { color: 'orange', length: 2 },
+          { color: 'orange-lighter', length: 3 },
+        ]}
+        className="justify-center"
+      />
+
+      <Collage id="investors" className="pb-64" {...collage} />
     </Layout>
   );
 };
