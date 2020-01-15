@@ -47,10 +47,10 @@ socialGood:
   title: Social Good
   image: /images/team/offset-earth-badge.png
   description: >-
-      At Stoplight, we believe the positive impact we can make on the world isn't limited to the API space.
-      That’s why we work with organizations like [Offset Earth](https://offset.earth/stoplightinc), [Urban Roots](https://urbanrootsatx.org/),
-      and [OSMI](https://osmihelp.org/). Check out our [Offset Earth Forest](https://offset.earth/stoplightinc)
-      to learn how we offset the carbon footprint of every Stoplight employee and became a climate positive workforce.
+    At Stoplight, we believe the positive impact we can make on the world isn't limited to the API space.
+    That’s why we work with organizations like [Offset Earth](https://offset.earth/stoplightinc), [Urban Roots](https://urbanrootsatx.org/),
+    and [OSMI](https://osmihelp.org/). Check out our [Offset Earth Forest](https://offset.earth/stoplightinc)
+    to learn how we offset the carbon footprint of every Stoplight employee and became a climate positive workforce.
 team:
   title: Meet The Team
   description: >-
@@ -146,6 +146,7 @@ team:
       name: Tamina Zaheri
       role: Product Advocate
 businesses:
+  title: Businesses Love Stoplight
   quotes:
     - author: Evin Callahan
       company: Hudya
@@ -171,8 +172,8 @@ businesses:
         Stoplight is getting better all the time. Big leap from [Stoplight]
         Classic.
       role: Senior Enterprise Architect
-  title: Businesses Love Stoplight
 press:
+  title: In The Press
   articles:
     - date: 'October, 2018'
       description: >-
@@ -206,7 +207,6 @@ press:
     color: grey-darkest
     href: 'https://press.stoplight.io/company'
     title: More Press & Assets
-  title: In The Press
 collage:
   title: Our Investors
   images:

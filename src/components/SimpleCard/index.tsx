@@ -6,10 +6,7 @@ import { Link } from '../Link';
 export interface ISimpleCard {
   className?: string;
   href?: string;
-  onClick?: () => void;
   hoverable?: boolean;
-  iconFeature?: boolean;
-  w?: string;
 }
 
 export const SimpleCard: React.FunctionComponent<ISimpleCard> = ({ className, href, hoverable, children }) => {

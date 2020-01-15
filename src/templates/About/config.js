@@ -3,9 +3,7 @@ import metaTags from 'src/components/MetaTags/config';
 import actionBar from 'src/components/ActionBar/config';
 import hero from 'src/components/Hero/config';
 
-import businesses from 'src/components/Businesses/config';
 import collage from 'src/components/Collage/config';
-import press from 'src/components/PressSection/config';
 
 export default {
   label: 'About',
@@ -40,8 +38,6 @@ export default {
         },
       ],
     },
-    businesses,
-    press,
     collage,
     actionBar,
     metaTags,

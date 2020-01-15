@@ -2,21 +2,21 @@ import cn from 'classnames';
 import * as React from 'react';
 import { withRouteData, withSiteData } from 'react-static';
 
-import { Chips, IChips } from 'src/components/Chip';
+import { IconName } from '@fortawesome/fontawesome-common-types';
+import { Chips } from 'src/components/Chip';
 import { Icon } from 'src/components/Icon';
 import { SimpleCardBody } from 'src/components/SimpleCard/SimpleCardBody';
 import { SimpleCardBottom } from 'src/components/SimpleCard/SimpleCardBottom';
 import { SimpleCardTag } from 'src/components/SimpleCard/SimpleCardTag';
 import { SimpleCardTitle } from 'src/components/SimpleCard/SimpleCardTitle';
 import { SimpleCardTop } from 'src/components/SimpleCard/SimpleCardTop';
-import { ICaseStudyCard, ICustomerSection, IFeature } from 'src/types';
 import { ActionBar, IActionBar } from '../../components/ActionBar';
-import { Container } from '../../components/Container';
+import { Container, IContainer } from '../../components/Container';
 import { GartnerCoolVendor, IGartnerCoolVendor } from '../../components/GartnerCoolVendor';
 import { Hero, IHero } from '../../components/Hero';
-import { Image } from '../../components/Image';
+import { IImage, Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
-import { Section } from '../../components/Section';
+import { ISection, Section } from '../../components/Section';
 import { SimpleCard } from '../../components/SimpleCard';
 
 export interface IEnterprise {
@@ -26,8 +26,34 @@ export interface IEnterprise {
   actionBar?: IActionBar;
   features: IFeature[];
   caseStudies?: ICaseStudyCard[];
-  chips?: IChips;
   customers: ICustomerSection;
+}
+
+interface ICustomerSection extends ISection {
+  images: IImage[];
+  title?: IContainer['title'];
+  cta?: IContainer['cta'];
+  cardBg?: string;
+}
+
+interface ICaseStudyCard {
+  href: string;
+  company: string;
+  image: string;
+  tag: string;
+  description: string;
+  color: string;
+}
+
+interface IFeature {
+  name: string;
+  icon: IconName;
+  iconStyle: {
+    '--fa-primary-color': string;
+    '--fa-secondary-color': string;
+  };
+  description: string;
+  href?: string;
 }
 
 export const Enterprise: React.FunctionComponent<IEnterprise> = ({
@@ -37,7 +63,6 @@ export const Enterprise: React.FunctionComponent<IEnterprise> = ({
   gartnerCoolVendor,
   actionBar,
   features,
-  chips,
   customers,
   ...sectionProps
 }) => {
@@ -48,7 +73,7 @@ export const Enterprise: React.FunctionComponent<IEnterprise> = ({
       {features && (
         <Section id="features" className="pt-32 sm:pt-0" noPadding>
           <Container className="flex flex-wrap justify-around">
-            {features.map((feature: IFeature, index) => (
+            {features.map((feature, index) => (
               <SimpleCard key={index} className="items-center text-center w-80 mt-14">
                 <Icon icon={['fad', feature.icon]} className="text-center" size="3x" style={feature.iconStyle} />
                 <SimpleCardTop className="mt-5 text-xl font-bold text-center text-grey-darkest">
@@ -65,7 +90,7 @@ export const Enterprise: React.FunctionComponent<IEnterprise> = ({
       )}
 
       {caseStudies && (
-        <Section id="features" {...sectionProps} noPaddingB>
+        <Section id="case-studies" {...sectionProps} noPaddingB>
           <Chips
             className="justify-center mb-10"
             segments={[{ color: 'indigo-light', length: 2 }, { color: 'indigo-dark', length: 3 }, { color: 'indigo' }]}

@@ -58,21 +58,18 @@ caseStudies:
 features:
   - name: Explorer
     description: The single source of truth for all your API related assets.
-    href:
     icon: 'chart-network'
     iconStyle:
       '--fa-primary-color': 'dodgerblue'
       '--fa-secondary-color': 'limegreen'
   - name: Design Libraries
     description: Define standard representations of your primary domain objects for easy re-use.
-    href:
     icon: 'layer-group'
     iconStyle:
       '--fa-primary-color': 'orange'
       '--fa-secondary-color': 'red'
   - name: API Style Guides
     description: Style guides increase API quality and consistency.
-    href:
     icon: 'pencil-ruler'
     iconStyle:
       '--fa-primary-color': 'skyblue'
@@ -86,28 +83,24 @@ features:
       '--fa-secondary-color': 'darksalmon'
   - name: External Docs
     description: Publish docs for your customers and external stakeholders.
-    href:
     icon: 'book-open'
     iconStyle:
       '--fa-primary-color': 'indianred'
       '--fa-secondary-color': 'indianred'
   - name: Git Integrations
     description: Seamlessly integrates with Github, Bitbucket, and Gitlab.
-    href:
     icon: 'code-branch'
     iconStyle:
       '--fa-primary-color': 'dodgerblue'
       '--fa-secondary-color': 'limegreen'
   - name: SSO Integrations
     description: Connect your identity provider.
-    href:
     icon: 'shield'
     iconStyle:
       '--fa-primary-color': 'tomato'
       '--fa-secondary-color': 'tomato'
   - name: On-Premise
     description: Runs where you want - hybrid cloud or in your data center.
-    href:
     icon: 'server'
     iconStyle:
       '--fa-primary-color': 'slategray'

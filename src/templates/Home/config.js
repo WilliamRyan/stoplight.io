@@ -4,12 +4,11 @@ import metaTags from 'src/components/MetaTags/config';
 import collage from 'src/components/Collage/config';
 import imageCallout from 'src/components/ImageCallout/config';
 import testimonials from 'src/components/Testimonials/config';
-import features from 'src/components/Features/config';
 import gartnerCoolVendor from 'src/components/GartnerCoolVendor/config';
 
 export default {
   label: 'Home',
   name: 'home',
   file: 'netlify/pages/home.yaml',
-  fields: [hero, features, testimonials, metaTags],
+  fields: [hero, testimonials, metaTags],
 };

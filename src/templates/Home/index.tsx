@@ -4,21 +4,21 @@ import { withRouteData, withSiteData } from 'react-static';
 
 import { SimpleCardBody } from 'src/components/SimpleCard/SimpleCardBody';
 
-import { Chips, IChips } from 'src/components/Chip';
+import { IconName } from '@fortawesome/fontawesome-common-types';
+import { Chips } from 'src/components/Chip';
 import { SimpleCardBottom } from 'src/components/SimpleCard/SimpleCardBottom';
 import { SimpleCardTag } from 'src/components/SimpleCard/SimpleCardTag';
 import { SimpleCardTitle } from 'src/components/SimpleCard/SimpleCardTitle';
 import { SimpleCardTop } from 'src/components/SimpleCard/SimpleCardTop';
-import { ICaseStudyCard, ICustomerSection, IFeature } from 'src/types';
-import { Container } from '../../components/Container';
+import { ITestimonials, Testimonials } from 'src/components/Testimonials';
+import { Container, IContainer } from '../../components/Container';
 import { Hero, IHero } from '../../components/Hero';
 import { Icon } from '../../components/Icon';
-import { Image } from '../../components/Image';
+import { IImage, Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
 import { ProductCard } from '../../components/ProductCard';
-import { Section } from '../../components/Section';
+import { ISection, Section } from '../../components/Section';
 import { SimpleCard } from '../../components/SimpleCard';
-import { ITestimonials, Testimonials } from '../../components/Testimonials';
 
 export interface IHome {
   color: string;
@@ -26,8 +26,34 @@ export interface IHome {
   testimonials: ITestimonials;
   caseStudies?: ICaseStudyCard[];
   features: IFeature[];
-  chips?: IChips;
   customers: ICustomerSection;
+}
+
+interface ICustomerSection extends ISection {
+  images: IImage[];
+  title?: IContainer['title'];
+  cta?: IContainer['cta'];
+  cardBg?: string;
+}
+
+interface ICaseStudyCard {
+  href: string;
+  company: string;
+  image: string;
+  tag: string;
+  description: string;
+  color: string;
+}
+
+interface IFeature {
+  name: string;
+  icon: IconName;
+  iconStyle: {
+    '--fa-primary-color': string;
+    '--fa-secondary-color': string;
+  };
+  description: string;
+  href?: string;
 }
 
 export const Home: React.FunctionComponent<IHome> = ({
@@ -36,7 +62,6 @@ export const Home: React.FunctionComponent<IHome> = ({
   caseStudies,
   testimonials,
   features,
-  chips,
   customers,
   ...sectionProps
 }) => {
@@ -44,7 +69,7 @@ export const Home: React.FunctionComponent<IHome> = ({
     <Layout>
       <Hero bgColor={color} {...hero} bottomElem={<ProductCards className="pt-24 sm:pt-6" />} />
       {features && (
-        <Section className="pt-32" noPadding>
+        <Section id="features" className="pt-32" noPadding>
           <Container
             chips={{
               className: 'justify-center mb-10',
@@ -81,7 +106,7 @@ export const Home: React.FunctionComponent<IHome> = ({
         </Section>
       )}
       {caseStudies && (
-        <Section id="features" {...sectionProps}>
+        <Section id="case-studies" {...sectionProps}>
           <Chips
             className="justify-center mb-10"
             segments={[{ color: 'indigo-light', length: 2 }, { color: 'indigo-dark', length: 3 }, { color: 'indigo' }]}
