@@ -163,7 +163,7 @@ export const About: React.FunctionComponent<IAbout> = ({
           <Container cta={press.cta} title={press.title}>
             <div className="flex flex-wrap justify-center">
               {press.articles.map((press, index) => (
-                <SimpleCard key={index} className="flex px-6 mb-6 w-80">
+                <SimpleCard key={index} className="flex px-6 mb-6 w-80" href={press.href}>
                   <div className="h-64 px-6 pb-6 bg-white rounded-lg shadow cursor-pointer text-grey-darker hover:bg-grey-lightest">
                     <SimpleCardTop className="flex items-start h-10 px-2 py-10">
                       <div className="flex items-start items-center justify-center h-32">
