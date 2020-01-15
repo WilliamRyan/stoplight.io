@@ -45,7 +45,7 @@ Object.keys(templates).forEach(collectionName => {
   const Template = templates[collectionName];
 
   if (Template) {
-    CMS.registerPreviewTemplate(collectionName, ({ entry }) => {
+    CMS.registerPreviewTemplate(collectionName, ({ entry }: any) => {
       const props = entry.getIn(['data']).toJS();
 
       return (

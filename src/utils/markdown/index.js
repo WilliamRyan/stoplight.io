@@ -1,6 +1,6 @@
 import MarkdownIt from 'markdown-it';
-const MarkdownItAnchors = require('markdown-it-anchor');
-const MarkdownItToC = require('markdown-it-toc-done-right');
+import MarkdownItAnchors from 'markdown-it-anchor';
+import MarkdownItToC from 'markdown-it-toc-done-right';
 
 import Highlight from './highlight';
 

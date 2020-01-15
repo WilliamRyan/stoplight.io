@@ -47,6 +47,7 @@ export interface IHeader {
   color?: string;
   banners: IBanner[];
   path: string;
+  pinnedColor?: string;
 }
 
 export const Header: React.FunctionComponent<IHeader> = props => {
@@ -55,7 +56,7 @@ export const Header: React.FunctionComponent<IHeader> = props => {
   const onUnpin = React.useCallback(() => setUnpinned(true), [setUnpinned]);
   const onUnfix = React.useCallback(() => setUnpinned(false), [setUnpinned]);
 
-  const { header, meta, color, banners } = props;
+  const { header, meta, color, banners, pinnedColor } = props;
   const headerItems = (header && header.items) || [];
 
   let banner;
@@ -79,13 +80,14 @@ export const Header: React.FunctionComponent<IHeader> = props => {
           key="header"
           className={cn('z-50 sticky pin-t pin-l pin-r', {
             [`shadow-md bg-${color || 'black'}`]: unpinned,
+            [`shadow-md bg-${pinnedColor}`]: pinnedColor,
           })}
         >
           <div className="relative">
             <Banner banner={banner} />
 
             <nav className={cn(headerHeightClass, 'container relative flex items-center')}>
-              <Link to="/" className="text-white hover:opacity-75 hover:text-white text-lg font-bold mr-8">
+              <Link to="/" className="mr-8 text-lg font-bold text-white hover:opacity-75 hover:text-white">
                 Stoplight
               </Link>
 
@@ -109,7 +111,7 @@ export const Header: React.FunctionComponent<IHeader> = props => {
   );
 };
 
-export default withSiteData(withRouteData(Header));
+export default withSiteData<any, any>(withRouteData<any, IHeader>(Header));
 
 export const Banner = ({ banner }) => {
   const [showBanner, setShowBanner] = useBanner();
@@ -118,14 +120,14 @@ export const Banner = ({ banner }) => {
   if (!banner || !showBanner) return null;
 
   return (
-    <div className="relative z-50 border-b border-lighten-200 text-white Banner bg-lighten-50 sm:hidden">
-      <div className="container h-12 flex flex-no-wrap items-center">
+    <div className="relative z-50 text-white border-b border-lighten-200 Banner bg-lighten-50 sm:hidden">
+      <div className="container flex flex-no-wrap items-center h-12">
         <Icon icon={['fad', 'rocket']} className="mr-3" />
 
         <div className="flex-1" dangerouslySetInnerHTML={{ __html: banner && banner.markdown }} />
 
         <div
-          className="cursor-pointer flex hover:bg-lighten-100 items-center justify-center justify-end p-2 rounded text-lighten-400 hover:text-white"
+          className="flex items-center justify-center justify-end p-2 rounded cursor-pointer hover:bg-lighten-100 text-lighten-400 hover:text-white"
           onClick={onClickBanner}
         >
           <Icon icon="times" />

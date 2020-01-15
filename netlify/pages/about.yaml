@@ -1,128 +1,150 @@
 path: /about
 hero:
   particles: true
-  image:
-    alt: About Us
-    src: /images/team/team.jpg
   title: About Stoplight
-featureSection:
-  title: Our Company Mission
+  subtitle: Stoplight enables all stakeholders working with APIs to be more productive
+  ctas:
+    - color: accent
+      href: '/careers'
+      title: Join Our Team
+mission:
+  title: Our Mission
+  description: We believe in a design-first approach to API development, so we created products that provide a means for design-first development.  Developing good design-first practices will minimize future costs, speed  up your time to market and lead to more consistent, higher quality  microservice and IoT applications.
+coreValues:
+  title: Our Core Values
+  description: At Stoplight, we ground ourselves around three guiding principles that unite us. We do our best work when
+    we’re empowered, collaborative, and moving forward with positive intent.
+  values:
+    - title: Be An Owner
+      summary: >-
+        When we see an opportunity to make an impact, we seize it.
+      icon: 'medal'
+      iconStyle:
+        '--fa-primary-color': 'gold'
+        '--fa-secondary-color': 'gold'
+    - title: Build Together
+      summary: >-
+        We trust in each other to add value and solve problems through teamwork.
+      icon: 'hammer'
+      iconStyle:
+        '--fa-primary-color': 'green'
+        '--fa-secondary-color': 'green'
+    - title: Practice Mindfulness
+      summary: >-
+        We seek to understand by listening, inquiring, and responding thoughtfully.
+      icon: 'brain'
+      iconStyle:
+        '--fa-primary-color': 'blue'
+        '--fa-secondary-color': 'blue'
+careers:
+  title: Careers
+  image: /images/team/careerdogs.jpg
   description: >-
-    At Stoplight, our mission is to enable all stakeholders working with
-    APIs to be more productive. We believe in a design-first approach to API development,
-    so we created products that provide a means for design-first development. 
-    Developing good design-first practices will minimize future costs, speed 
-    up your time to market and lead to more consistent, higher quality 
-    microservice and IoT applications.
-  features:
-    # - description: >-
-    #     In 2014, Marc MacLeod worked as an independent software consultant
-    #     in Los Angeles building Application Programming Interfaces, known as APIs,
-    #     for companies. MacLeod noticed that many of the APIs, which are systems of
-    #     tools and resources in an operating system that enable developers to create
-    #     software applications, lacked documentation and were poorly built. So, MacLeod
-    #     created a set of tools to serve as a blueprint for how to build better APIs,
-    #     and those tools became the foundation behind Stoplight.
-    #   image: /images/team/marc-and-tom.png
-    #   shortName: Our History
-    #   title: Our History
-    - description: >-
-        Headquartered in Austin, Texas, our team hails from across the US and Europe, 
-        and is united by our passion for APIs. From skeeball champions to rock climbers, 
-        tough mudders to restaurateurs, each and every member (including our office doggies) brings their own unique 
-        perspectives and experiences to the table. Thinking out of the box is our purpose 
-        - the weirder the better - and challenging the status quo is our culture. Think you'd be a good fit?
-        Check out our [current open roles](https://stoplight.io/careers), and come join us!
-      image: /images/team/dogs.gif
-      shortName: Careers
-      title: Careers
-    - description: >-
-        At Stoplight, we believe the positive impact we can make on the world isn't limited to the API space. 
-        That’s why we work with organizations like [Offset Earth](https://offset.earth/stoplightinc), [Urban Roots](https://urbanrootsatx.org/), 
-        and [OSMI](https://osmihelp.org/). Check out our [Offset Earth Forest](https://offset.earth/stoplightinc) 
-        to learn how we offset the carbon footprint of every Stoplight employee and became a climate positive workforce.
-      image: /images/team/offset-earth-badge.png
-      shortName: Social Good
-      title: Social Good
+    The Stoplight team is a talented and creative group (office pups included); united in our passion for creating best in class API tooling.
+    We're always looking for enthusiastic, curious, mission-driven individuals to join us as we power the world’s leading API first companies. Think you'd be a good fit?
+    Check out our [current open roles](https://stoplight.io/careers)!
+socialGood:
+  title: Social Good
+  image: /images/team/offset-earth-badge.png
+  description: >-
+      At Stoplight, we believe the positive impact we can make on the world isn't limited to the API space.
+      That’s why we work with organizations like [Offset Earth](https://offset.earth/stoplightinc), [Urban Roots](https://urbanrootsatx.org/),
+      and [OSMI](https://osmihelp.org/). Check out our [Offset Earth Forest](https://offset.earth/stoplightinc)
+      to learn how we offset the carbon footprint of every Stoplight employee and became a climate positive workforce.
 team:
-  - image: /images/bachi-collin-1-.jpg
-    name: Collin Bachi
-    role: Devops Engineer
-  - image: /images/cassera_headshot.png
-    name: Nicholas Cassera
-    role: Software Engineer
-  - image: /images/chianese_headshot.png
-    name: Vincenzo Chianese
-    role: Software Engineer
-  - image: /images/faust_headshot.png
-    name: Scott Faust
-    role: Growth
-  - image: /images/deborah-garnel-headshot.jpg
-    name: Deborah Garnel
-    role: SDET
-  - image: /images/hilton_headshot.png
-    name: William Hilton
-    role: Software Engineer
-  - image: /images/chelsea-hohmann-headshot.jpg
-    name: Chelsea Hohmann
-    role: Software Engineer
-  - image: /images/jakub-jankowski-headshot.jpg
-    name: Jakub Jankowski
-    role: Software Engineer
-  - image: /images/lott_headshot.png
-    name: Chris Lott
-    role: Software Engineer
-  - image: /images/carol-maciaszek-headshot.png
-    name: Karol Maciaszek
-    role: Software Engineer
-  - image: /images/macleod_headshot.png
-    name: Marc MacLeod
-    role: Founder & CEO
-  - image: /images/mcdonald_headshot.png
-    name: Ross McDonald
-    role: Customer Success
-  - image: /images/chris-miaskowski-headshot.jpg
-    name: Chris Miaskowski
-    role: Software Engineer
-  - image: /images/team/vazha-omanashvili.png
-    name: Vazha Omanashvili
-    role: Software Engineer
-  - image: /images/team/stephen-price.jpg
-    name: Stephen Price
-    role: Sales Engineer
-  - image: /images/pytleski_headshot.png
-    name: Thomas Pytleski
-    role: Software Engineer
-  - image: /images/dave-headshot.jpg
-    name: Dave Roberts
-    role: Sales Engineering
-  - image: /images/tonia-roberts-headshot.jpg
-    name: Tonia Roberts
-    role: Enterprise Account Executive
-  - image: /images/jakub-rozek-headshot.jpg
-    name: Jakub Rozek
-    role: Software Engineer
-  - image: /images/sarah-spear.jpeg
-    name: Sarah Spear
-    role: Software Engineer
-  - image: /images/phil-sturgeon-headshot2.png
-    name: Phil Sturgeon
-    role: Software Architect
-  - image: /images/surratt-headshot.jpg
-    name: Kristen Surratt
-    role: Customer Advocate
-  - image: /images/team/paula-tulis.jpg
-    name: Paula Tulis
-    role: Software Engineer
-  - image: /images/wallach_headshot.png
-    name: Robert Wallach
-    role: Content & Support
-  - image: /images/harrison-yeager-headshot.jpg
-    name: Harrison Yeager
-    role: Ops
-  - image: /images/team/tamina-zaheri.png
-    name: Tamina Zaheri
-    role: Product Advocate
+  title: Meet The Team
+  description: >-
+    Headquartered in Austin, Texas, our team hails from across the US and Europe, and is united by our
+    passion for APIs. From skeeball champions to rock climbers, tough mudders to restaurateurs, each and
+    every member brings their own unique perspectives and experiences to the table. Thinking out of the
+    box is our purpose - the weirder the better - and challenging the status quo is our culture.
+  image: /images/team/team.jpg
+  actionBar:
+    ctas:
+      - color: accent
+        href: '/careers'
+        title: Learn More
+    enabled: true
+    text: Want to join the team? We're hiring!
+  members:
+    - image: /images/bachi-collin-1-.jpg
+      name: Collin Bachi
+      role: Devops Engineer
+    - image: /images/cassera_headshot.png
+      name: Nicholas Cassera
+      role: Software Engineer
+    - image: /images/chianese_headshot.png
+      name: Vincenzo Chianese
+      role: Software Engineer
+    - image: /images/faust_headshot.png
+      name: Scott Faust
+      role: Growth
+    - image: /images/deborah-garnel-headshot.jpg
+      name: Deborah Garnel
+      role: SDET
+    - image: /images/hilton_headshot.png
+      name: William Hilton
+      role: Software Engineer
+    - image: /images/chelsea-hohmann-headshot.jpg
+      name: Chelsea Hohmann
+      role: Software Engineer
+    - image: /images/jakub-jankowski-headshot.jpg
+      name: Jakub Jankowski
+      role: Software Engineer
+    - image: /images/lott_headshot.png
+      name: Chris Lott
+      role: Software Engineer
+    - image: /images/carol-maciaszek-headshot.png
+      name: Karol Maciaszek
+      role: Software Engineer
+    - image: /images/macleod_headshot.png
+      name: Marc MacLeod
+      role: Founder & CEO
+    - image: /images/mcdonald_headshot.png
+      name: Ross McDonald
+      role: Customer Success
+    - image: /images/chris-miaskowski-headshot.jpg
+      name: Chris Miaskowski
+      role: Software Engineer
+    - image: /images/team/vazha-omanashvili.png
+      name: Vazha Omanashvili
+      role: Software Engineer
+    - image: /images/team/stephen-price.jpg
+      name: Stephen Price
+      role: Sales Engineer
+    - image: /images/pytleski_headshot.png
+      name: Thomas Pytleski
+      role: Software Engineer
+    - image: /images/dave-headshot.jpg
+      name: Dave Roberts
+      role: Sales Engineering
+    - image: /images/tonia-roberts-headshot.jpg
+      name: Tonia Roberts
+      role: Enterprise Account Executive
+    - image: /images/jakub-rozek-headshot.jpg
+      name: Jakub Rozek
+      role: Software Engineer
+    - image: /images/sarah-spear.jpeg
+      name: Sarah Spear
+      role: Software Engineer
+    - image: /images/phil-sturgeon-headshot2.png
+      name: Phil Sturgeon
+      role: Software Architect
+    - image: /images/surratt-headshot.jpg
+      name: Kristen Surratt
+      role: Customer Advocate
+    - image: /images/team/paula-tulis.jpg
+      name: Paula Tulis
+      role: Software Engineer
+    - image: /images/wallach_headshot.png
+      name: Robert Wallach
+      role: Content & Support
+    - image: /images/harrison-yeager-headshot.jpg
+      name: Harrison Yeager
+      role: Ops
+    - image: /images/team/tamina-zaheri.png
+      name: Tamina Zaheri
+      role: Product Advocate
 businesses:
   quotes:
     - author: Evin Callahan
@@ -155,8 +177,8 @@ businesses:
         Stoplight is getting better all the time. Big leap from [Stoplight]
         Classic.
       role: Senior Enterprise Architect
-  title: Businesses Are Loving Stoplight
-pressSection:
+  title: Businesses Love Stoplight
+press:
   articles:
     - date: 'October, 2018'
       description: >-
@@ -192,6 +214,7 @@ pressSection:
     title: More Press & Assets
   title: In The Press
 collage:
+  title: Our Investors
   images:
     - alt: Bill Wood Ventures
       src: /images/bill-wood-logo_trans.png
@@ -205,13 +228,6 @@ collage:
       src: /images/logo_capitalfactory.png
     - alt: Social Starts
       src: /images/logo_socialstarts.png
-actionBar:
-  ctas:
-    - color: accent
-      href: '/careers'
-      title: Learn More
-  enabled: true
-  text: Want to join the team? We're hiring!
 meta:
   description: >-
     Find out all you need to know about Stoplight and it's talented and creative

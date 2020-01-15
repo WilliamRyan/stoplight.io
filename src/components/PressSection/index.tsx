@@ -24,13 +24,13 @@ export const Press = ({ image, date, description, publication, href }) => {
     <a
       href={href}
       target="_blank"
-      className="pb-6 px-6 shadow bg-white rounded-lg text-grey-darker cursor-pointer hover:bg-grey-lightest"
+      className="px-6 pb-6 bg-white rounded-lg shadow cursor-pointer text-grey-darker hover:bg-grey-lightest"
     >
-      <div className="flex items-center justify-center items-start h-32">
+      <div className="flex items-start items-center justify-center h-32">
         <Image src={image} alt={publication} size="sm" />
       </div>
 
-      <div className="uppercase font-bold mb-3">{date}</div>
+      <div className="mb-3 font-bold uppercase">{date}</div>
       <div dangerouslySetInnerHTML={{ __html: description }} />
     </a>
   );
@@ -42,10 +42,10 @@ export const PressSection: React.FunctionComponent<IPressSection> = ({ id, title
   return (
     <Section id={id} {...sectionProps}>
       <Container title={title} cta={cta}>
-        <div className="flex justify-center flex-wrap -mb-12">
+        <div className="flex flex-wrap justify-center -mb-12">
           {articles.map((item, key) => {
             return (
-              <div key={key} className="flex md:w-full w-1/4 px-6 mb-12">
+              <div key={key} className="flex w-1/4 px-6 mb-12 md:w-full">
                 <Press {...item} />
               </div>
             );

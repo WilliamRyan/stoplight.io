@@ -1,7 +1,6 @@
 import cn from 'classnames';
 import * as React from 'react';
 
-import { Chips } from '../Chip';
 import { Container, IContainer } from '../Container';
 import { Icon, IconProp } from '../Icon';
 import { IImage, Image } from '../Image';
@@ -34,11 +33,11 @@ export const CustomerSection: React.FunctionComponent<ICustomerSection> = ({
           segments: [{ color: 'indigo-light', length: 2 }, { color: 'indigo-dark', length: 3 }, { color: 'indigo' }],
         }}
       >
-        <div className="uppercase text-grey-dark font-semibold text-center text-lg">
+        <div className="text-lg font-semibold text-center uppercase text-grey-dark">
           Stoplight powers some of the world's leading API first companies
         </div>
 
-        <div className="flex justify-between flex-wrap items-center sm:justify-center mt-14">
+        <div className="flex flex-wrap items-center justify-between sm:justify-center mt-14">
           <CaseStudyCard
             href="/case-studies/arkea"
             company="Arkea"
@@ -70,9 +69,9 @@ export const CustomerSection: React.FunctionComponent<ICustomerSection> = ({
           />
         </div>
 
-        <div className="flex justify-between flex-wrap items-center mt-10 px-6">
+        <div className="flex flex-wrap items-center justify-between px-6 mt-10">
           {images.map((image, key) => (
-            <div key={key} className="sm:w-1/2 sm:p-6 py-8 text-center">
+            <div key={key} className="py-8 text-center sm:w-1/2 sm:p-6">
               <Image className="h-8" src={image.src} title={`${image.alt} Logo`} alt={image.alt} size="sm" />
             </div>
           ))}
@@ -103,9 +102,9 @@ const CaseStudyCard = ({ company, image, color, summary, href, tag, icon, bg = '
         <Image className="h-10 text-grey-darkest" src={image} title={`${company} Logo`} alt={company} size="sm" />
       </div>
 
-      <div className="leading-loose text-grey-darker mt-4 flex-1">{summary}</div>
+      <div className="flex-1 mt-4 leading-loose text-grey-darker">{summary}</div>
 
-      <div className="flex items-center mt-6 border-t pt-6">
+      <div className="flex items-center pt-6 mt-6 border-t">
         <div className="flex items-center flex-1">
           <div className="mr-3 font-semibold">Read</div>
           <Icon icon={['fad', 'arrow-right']} />

@@ -12,13 +12,13 @@ import { ISection, Section } from '../Section';
 
 export interface IFeature {
   title: string;
-  shortName: string;
-  titleURL: string;
   description: string;
   image: string;
-  isReversed: boolean;
-  titleColor: string;
-  isLast: boolean;
+  shortName?: string;
+  titleURL?: string;
+  isReversed?: boolean;
+  titleColor?: string;
+  isLast?: boolean;
 }
 
 export interface IFeatureSection extends ISection {
@@ -54,8 +54,8 @@ export const Feature: React.FunctionComponent<IFeature> = props => {
               {title}
             </Link>
           ) : (
-            title
-          )}
+              title
+            )}
         </h2>
         <div
           className={cn('mb-12 pb-12 sm:pb-0 max-w-md leading-loose text-lg', {
@@ -65,7 +65,7 @@ export const Feature: React.FunctionComponent<IFeature> = props => {
         />
       </div>
 
-      <div className="flex-1 w-1/2 sm:hidden relative">
+      <div className="relative flex-1 w-1/2 sm:hidden">
         <Image
           src={image}
           className={cn('bg-center bg-cover bg-no-repeat h-128 w-128 rounded-full', { 'ml-auto': !isReversed })}
@@ -78,21 +78,18 @@ export const Feature: React.FunctionComponent<IFeature> = props => {
 };
 
 export interface IFeatureStrip {
-  features: Array<{
-    shortName: string;
-    title?: string;
-  }>;
+  features: IFeature[];
 }
 
 export const FeatureStrip = ({ features }: IFeatureStrip) => {
   return (
-    <div className="bg-blue-darkest shadow py-4 text-white whitespace-no-wrap overflow-auto">
-      <div className="container flex items-center justify-around flex-no-wrap sm:justify-start">
+    <div className="py-4 overflow-auto text-white whitespace-no-wrap shadow bg-blue-darkest">
+      <div className="container flex flex-no-wrap items-center justify-around sm:justify-start">
         {features.map((feature, key) => (
           <a
             key={key}
             href={`#${slugify(feature.title)}`}
-            className="flex items-center justify-center py-2 px-4 hover:bg-lighten-50 rounded-lg text-white font-semibold"
+            className="flex items-center justify-center px-4 py-2 font-semibold text-white rounded-lg hover:bg-lighten-50"
           >
             <Icon className="text-lg" icon={['fad', 'check-circle']} />
             <div className="ml-3">{feature.shortName}</div>
@@ -122,7 +119,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
         <Container title={title} className={cn(!buttons || !buttons.length ? 'py-32 border-b' : null)}>
           {description && (
             <div
-              className="flex leading-loose text-lg text-center max-w-lg mx-auto"
+              className="flex max-w-lg mx-auto text-lg leading-loose text-center"
               dangerouslySetInnerHTML={{ __html: description }}
             />
           )}
@@ -131,7 +128,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
 
       {buttons && buttons.length ? (
         <Container className="mt-20 border-b">
-          <div className="flex-1 flex lg:justify-center lg:items-between lg:flex-wrap">
+          <div className="flex flex-1 lg:justify-center lg:items-between lg:flex-wrap">
             {buttons.map((button, index) => (
               <Button key={index} className={index > 0 ? 'ml-4 sm:ml-0' : ''} {...button} />
             ))}
@@ -139,7 +136,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
         </Container>
       ) : null}
 
-      <Container className="mx-auto pt-16">
+      <Container className="pt-16 mx-auto">
         {features.map((feature, index) => (
           <Feature
             key={index}
@@ -151,7 +148,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
         ))}
       </Container>
 
-      <ActionBar className="sm:mt-14 mt-20" {...actionBar} />
+      <ActionBar className="mt-20 sm:mt-14" {...actionBar} />
     </Section>
   );
 };
