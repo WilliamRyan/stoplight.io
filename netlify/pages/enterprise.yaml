@@ -1,106 +1,48 @@
-title: Stoplight Enterprise
-color: black
-path: /enterprise
 hero:
-  particles: true
+  ctas:
+    - submit:
+        button:
+          color: purple
+          href: /demo/
+          title: Book a Demo
+        formId: a5fb939e-7da2-4a9e-9784-338f92a71e41
+        input:
+          placeholder: Your business email...
+          type: email
+      title: Book a Demo
+      type: submit
   image:
     alt: Stoplight Enterprise Platform
     src: /images/enterprise/hero.png
-  title: API Design Management at Scale
+  particles: true
   subtitle: >-
-    The Stoplight Enterprise Platform increases the consistency, visibility, and quality of your internal and external APIs.
-  ctas:
-    - title: Book a Demo
-      type: 'submit'
-      submit:
-        button:
-          color: purple
-          title: Book a Demo
-          href: '/demo/'
-        input:
-          type: email
-          placeholder: Your business email...
-        formId: 'a5fb939e-7da2-4a9e-9784-338f92a71e41'
-gartnerCoolVendor:
-  cta:
-    href: '/gartner-cool-vendor/'
-    title: Learn More
-  title: Stoplight named a Gartner Cool Vendor
-  description: >-
-    Stoplight is cool because it enables enterprises to manage API Design at scale.
-    Learn more about collaborative API Design in this Gartner report.
-  image: /images/gartner_cv_2019_rgb.png
-actionBar:
-  ctas:
-    - href: /demo
-      title: Book a Demo
-  enabled: true
-  text: Ready to go API First with the Stoplight Enterprise Platform?
-features:
-  - name: Explorer
-    summary: The single source of truth for all your API related assets.
-    href:
-    icon: 'chart-network'
-    iconStyle:
-      '--fa-primary-color': 'dodgerblue'
-      '--fa-secondary-color': 'limegreen'
-  - name: Design Libraries
-    summary: Define standard representations of your primary domain objects for easy re-use.
-    href:
-    icon: 'layer-group'
-    iconStyle:
-      '--fa-primary-color': 'orange'
-      '--fa-secondary-color': 'red'
-  - name: API Style Guides
-    summary: Style guides increase API quality and consistency.
-    href:
-    icon: 'pencil-ruler'
-    iconStyle:
-      '--fa-primary-color': 'skyblue'
-      '--fa-secondary-color': 'steelblue'
-  - name: Internal Docs
-    summary: Technical docs for the entire company.
-    href:
-    icon: 'book'
-    iconStyle:
-      '--fa-primary-color': 'salmon'
-      '--fa-secondary-color': 'darksalmon'
-  - name: External Docs
-    summary: Publish docs for your customers and external stakeholders.
-    href:
-    icon: 'book-open'
-    iconStyle:
-      '--fa-primary-color': 'indianred'
-      '--fa-secondary-color': 'indianred'
-  - name: Git Integrations
-    summary: Seamlessly integrates with Github, Bitbucket, and Gitlab.
-    href:
-    icon: 'code-branch'
-    iconStyle:
-      '--fa-primary-color': 'dodgerblue'
-      '--fa-secondary-color': 'limegreen'
-  - name: SSO Integrations
-    summary: Connect your identity provider.
-    href:
-    icon: 'shield'
-    iconStyle:
-      '--fa-primary-color': 'tomato'
-      '--fa-secondary-color': 'tomato'
-  - name: On-Premise
-    summary: Runs where you want - hybrid cloud or in your data center.
-    href:
-    icon: 'server'
-    iconStyle:
-      '--fa-primary-color': 'slategray'
-      '--fa-secondary-color': 'slategray'
+    The Stoplight Enterprise Platform increases the consistency, visibility, and
+    quality of your internal and external APIs.
+  title: API Design Management at Scale
+cards:
+  cardBottom:
+    author: test test
+    color: blue
+    meta: 'test test test '
+    tag: HR
+    text: and more text optional
+  cardMiddle:
+    description: here is a test description. blah blah blah yghjkldcsovodvopj
+  cardTop:
+    subtitle: Test subtitle
+    title: Test title
+  hoverable: true
+  href: stoplight.io
 meta:
-  description: Increase the consistency, visibility, and quality of your internal and external APIs with the Stoplight Enterprise Platform.
+  description: >-
+    Increase the consistency, visibility, and quality of your internal and
+    external APIs with the Stoplight Enterprise Platform.
   favicon: /images/mark_light_bg.png
   image: /images/enterprise/hero.png
-  src: /images/studio/hero.png
   title: Enterprise - API Design Management at Scale | Stoplight
   twitter:
-    description: Increase the consistency, visibility, and quality of your internal and external APIs with the Stoplight Enterprise Platform.
-    src: /images/enterprise/hero.png
+    description: >-
+      Increase the consistency, visibility, and quality of your internal and
+      external APIs with the Stoplight Enterprise Platform.
     title: Enterprise - API Design Management at Scale | Stoplight
     username: '@stoplightio'
