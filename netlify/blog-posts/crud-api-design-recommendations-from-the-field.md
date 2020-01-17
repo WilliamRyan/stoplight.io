@@ -87,6 +87,8 @@ It is often possible to map these to update actions, for example, updating a use
 
 In those cases, it makes sense to include actions as resources and place them at URLs such as `/users/{ID}/actions/suspend`. It's a great idea to denote them clearly, e.g., by prefixing them with `/actions`, although the use of a verb (like "suspend") already gives it away that we're breaking away from pure CRUD for better developer experience.
 
+<div class="convertful-26074"></div>
+
 ## The HTTP Verbs
 
 Using HTTP verbs correctly and adequately is one of the cornerstones of good API design, and the basics are not very complicated so that you are in for a "quick win" here!

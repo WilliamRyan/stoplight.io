@@ -96,6 +96,8 @@ You’ll find a handful of other tags and examples on the site. It takes a littl
 
 For something more ongoing, attached to mock servers, you’ll be better off starting from an OpenAPI (previously Swagger) description, as described in the next section.
 
+<div class="convertful-26074"></div>
+
 ## Connect a Mock Server to Produce Random JSON Data
 
 A mock API server is useful during development and testing when live data is either unavailable or unreliable. Here, you’re looking to make a live API call and have it imitate a real API server by providing realistic responses to your requests. Standing up a mock server with static responses is trivial, but then the responses aren’t generated. Instead, use an OpenAPI description of your API (or import you Swagger file) and Stoplight to generate your mock servers.

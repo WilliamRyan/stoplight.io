@@ -141,6 +141,8 @@ Your results should be identical to the previous example:
 
 Now let’s see what it looks like when you want to add a company using the POST method.
 
+<div class="convertful-26074"></div>
+
 ## Add Other Methods and Endpoints
 
 Rare is the API with only one endpoint and request method. To get a better feel for creating REST APIs with Python, let’s see how we can expand an API using Flask and Falcon.
