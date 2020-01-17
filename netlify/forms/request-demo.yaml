@@ -2,12 +2,12 @@ path: /demo
 hero:
   particles: true
   # skew: rounded
-  title: On average, adopting Stoplight results in a 36% gain in API development efficiency, and increases API quality by 30%.
+  # title: On average, adopting Stoplight results in a 36% gain in API development efficiency, and increases API quality by 30%.
   # subtitle: >-
   #   On average, adopting Stoplight results in a 36% gain in API development efficiency, and increases API quality by 30%.
 color: black
 hubspot:
-  formId: 7ae2bb42-67a6-4ee3-9ac5-ff21d87812ea
+  formId: d1df6b0e-b32b-4ad4-99e7-ef79d463c2b6
   portalId: '4892910'
 collage:
   cta:
@@ -37,64 +37,79 @@ collage:
     Thousands of companies use Stoplight to streamline their API & Microservices
     workflow
 testimonials:
-  - author: Tim Slagle
-    company: Zoom
-    image: /images/testimonials/tim_s.jpg
+  # actionBar:
+  #   ctas:
+  #     - color: white
+  #       href: /demo
+  #       outlined: true
+  #       title: Book a Demo
+  #     - color: purple
+  #       href: /start
+  #       title: Get Started
+  #   enabled: true
+  #   text: Getting started is easy. Be up and running in minutes.
+  testimonials:
+    - author: Felix Sargent
+      company: MediaMath
+      image: /images/felix_s.jpg
+      quote: >-
+        Stoplight provides a clean user interface and enables an engineering
+        team to develop a compliant API with minimal difficulty. Other tools
+        don't provide the same details, guard rails, and error validation that
+        Stoplight provides.
+      role: Director of Engineering
+    - author: Carlos Lozano
+      company: GFT Group
+      image: /images/carlos_testimonial.jpeg
+      quote: >-
+        When it comes to specification markup and documentation, the order of
+        magnitude has gone from days to hours.
+      role: Senior Enterprise Architect
+    - author: John Vajda
+      company: JumpCloud
+      image: /images/testimonials/john_vajda.jpeg
+      quote: >-
+        Stoplight has been a serious game changer for JumpCloud’s API
+        development! We love all the rich design, documentation and testing
+        features, which has enabled us to design awesome APIs for our customers.
+      role: Product Manager
+    - author: Tim Slagle
+      company: Zoom
+      image: /images/testimonials/tim_s.jpg
+      quote: >-
+        Our team roughly saves 15-20 hours a week. It makes it quicker to write, and the review process is quicker as well because we can go in and everybody can see the edits.  We're pretty impressed with Stoplight as a whole.
+      role: Manager of Developer Advocacy
+testimonialArray:
+  - author: Felix Sargent
+    company: MediaMath
+    image: /images/felix_s.jpg
     quote: >-
-      Our team roughly saves 15-20 hours a week. It makes it quicker to write, and the review process is quicker as well because we can go in and everybody can see the edits.  We're pretty impressed with Stoplight as a whole.
-    role: Manager of Developer Advocacy
-  - author: 'Carlos Lozano '
+      Stoplight provides a clean user interface and enables an engineering
+      team to develop a compliant API with minimal difficulty. Other tools
+      don't provide the same details, guard rails, and error validation that
+      Stoplight provides.
+    role: Director of Engineering
+  - author: Carlos Lozano
+    company: GFT Group
     image: /images/carlos_testimonial.jpeg
     quote: >-
       When it comes to specification markup and documentation, the order of
       magnitude has gone from days to hours.
-    role: 'Senior Enterprise Architect, GFT Group'
+    role: Senior Enterprise Architect
   - author: John Vajda
+    company: JumpCloud
     image: /images/testimonials/john_vajda.jpeg
     quote: >-
       Stoplight has been a serious game changer for JumpCloud’s API
       development! We love all the rich design, documentation and testing
       features, which has enabled us to design awesome APIs for our customers.
-    role: 'Product Manager, JumpCloud'
-  # - author: Felix Sargent
-  #   company: MediaMath
-  #   image: /images/felix_s.jpg
+    role: Product Manager
+  # - author: Tim Slagle
+  #   company: Zoom
+  #   image: /images/testimonials/tim_s.jpg
   #   quote: >-
-  #     Stoplight provides a clean user interface and enables an engineering
-  #     team to develop a compliant API with minimal difficulty. Other tools
-  #     don't provide the same details, guard rails, and error validation that
-  #     Stoplight provides.
-  #   role: Director of Engineering
-# testimonials:
-#   testimonials:
-#     - author: Tim Slagle
-#       company: Zoom
-#       image: /images/testimonials/tim_s.jpg
-#       quote: >-
-#         Our team roughly saves 15-20 hours a week. It makes it quicker to write, and the review process is quicker as well because we can go in and everybody can see the edits.  We're pretty impressed with Stoplight as a whole.
-#       role: Manager of Developer Advocacy
-#     - author: 'Carlos Lozano '
-#       image: /images/carlos_testimonial.jpeg
-#       quote: >-
-#         When it comes to specification markup and documentation, the order of
-#         magnitude has gone from days to hours.
-#       role: 'Senior Enterprise Architect, GFT Group'
-#     - author: John Vajda
-#       image: /images/testimonials/john_vajda.jpeg
-#       quote: >-
-#         Stoplight has been a serious game changer for JumpCloud’s API
-#         development! We love all the rich design, documentation and testing
-#         features, which has enabled us to design awesome APIs for our customers.
-#       role: 'Product Manager, JumpCloud'
-#     - author: Felix Sargent
-#       company: MediaMath
-#       image: /images/felix_s.jpg
-#       quote: >-
-#         Stoplight provides a clean user interface and enables an engineering
-#         team to develop a compliant API with minimal difficulty. Other tools
-#         don't provide the same details, guard rails, and error validation that
-#         Stoplight provides.
-#       role: Director of Engineering
+  #     Our team roughly saves 15-20 hours a week. It makes it quicker to write, and the review process is quicker as well because we can go in and everybody can see the edits.  We're pretty impressed with Stoplight as a whole.
+  #   role: Manager of Developer Advocacy
 meta:
   description: >-
     Want to see how we could help your company and organization with our API

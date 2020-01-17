@@ -32,9 +32,7 @@ export const Testimonial: React.FunctionComponent<ITestimonial> = ({
   className,
 }) => {
   return (
-    <div className={cn(className, '')}>
-      {/* <div className={cn(className, 'w-1/2 sm:w-full flex px-14 pb-20 sm:px-0 sm:px-10')}> */}
-
+    <div className={cn(className, 'w-1/2 sm:w-full flex px-14 pb-20 sm:px-0 sm:px-10')}>
       <div className="relative items-stretch w-full max-w-lg mx-auto bg-white rounded-lg shadow-md lg:flex">
         {!image && (
           <Icon className="absolute h-10 text-grey" style={{ top: -15, left: -15, fontSize: 30 }} icon="quote-left" />

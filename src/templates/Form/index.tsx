@@ -2,68 +2,121 @@ import cn from 'classnames';
 import * as React from 'react';
 import { withRouteData } from 'react-static';
 
+import { ActionBar, IActionBar } from '../../components/ActionBar';
 import { Collage, ICollage } from '../../components/Collage';
+import { Container } from '../../components/Container';
 import { Hero, IHero } from '../../components/Hero';
 import { HubSpotForm, IHubSpotForm } from '../../components/HubSpotForm';
 import { Layout } from '../../components/Layout';
-import { ITestimonial, Testimonial } from '../../components/Testimonials';
-import { ContentBlock } from './ContentBlock';
-import { LeftContentForm } from './LeftContentForm';
+import { IRelatedPage, RelatedPages } from '../../components/RelatedPages';
+import { ITestimonials, Testimonials } from '../../components/Testimonials';
 
-export interface IDemoForm {
+export interface IForm {
+  title: string;
+  subtitle: string;
+  color: string;
   hubspot: IHubSpotForm;
-  hero: IHero;
-  testimonials: ITestimonial[];
   collage: ICollage;
+  testimonials: ITestimonials;
+  titleImage?: string;
+  relatedPages?: IRelatedPage[];
+  actionBar: IActionBar;
+  leftContent?: {
+    title: string;
+    description: string;
+  };
+  centerContent?: {
+    title: string;
+    description: string;
+  };
+  hero?: IHero;
 }
 
-export const DemoForm: React.FunctionComponent<IDemoForm> = ({ hero, testimonials, hubspot, collage }) => {
+export const Form: React.FunctionComponent<IForm> = ({
+  titleImage,
+  title,
+  subtitle,
+  color,
+  leftContent,
+  hubspot,
+  collage,
+  testimonials,
+  relatedPages,
+  actionBar,
+  centerContent,
+  hero,
+}) => {
+  const hasLeftContent = leftContent && leftContent.description ? true : false;
+  const hasCenterContent = centerContent && centerContent.description ? true : false;
   return (
     <Layout>
-      {hero && (
-        <Hero
-          title={hero.title}
-          subtitle={hero.subtitle}
-          {...hero}
-          bottomElem={
-            <div className="container relative pb-64 mx-auto -mt-64 pt-80 z-5">
-              <LeftContentForm className="">
-                <ContentBlock className="flex flex-wrap justify-center w-full h-full max-w-lg sm:w-full sm:content-center">
-                  <HubSpotForm
-                    className="w-full h-full max-w-lg p-8 pt-12 bg-white rounded-lg "
-                    portalId={hubspot.portalId}
-                    formId={hubspot.formId}
-                    style={{ top: 100 }}
-                  >
-                    <div className="pb-12 text-4xl font-bold leading-tight text-center text-grey-darkest sm:pt-14 md:text-4xl">
-                      Request a Demo
-                    </div>
-                  </HubSpotForm>
-                </ContentBlock>
-                {testimonials && (
-                  <ContentBlock className="w-auto pl-24 sm:w-100 sm:items-center sm:text-center sm:pr-0">
-                    {testimonials.map((testimonial, index) => (
-                      <Testimonial
-                        key={index}
-                        className="flex pb-20 px-14 sm:px-0 sm:px-10 sm:w-full sm:justify-end"
-                        image={testimonial.image}
-                        quote={testimonial.quote}
-                        author={testimonial.author}
-                        company={testimonial.company}
-                        role={testimonial.role}
-                      />
-                    ))}
-                  </ContentBlock>
-                )}
-              </LeftContentForm>
-            </div>
-          }
-        />
-      )}
+      <Hero
+        titleImage={titleImage}
+        title={title}
+        subtitle={subtitle}
+        bgColor={color}
+        aligned={hasLeftContent || titleImage ? 'left' : 'center'}
+        {...hero}
+      />
+
+      <Container className="relative z-20 flex py-24 md:flex-wrap-reverse">
+        {hasLeftContent && (
+          <div className="flex-1 w-2/3 pr-4 md:w-full md:pr-0">
+            {leftContent && leftContent.title && (
+              <div className="text-3xl" dangerouslySetInnerHTML={{ __html: leftContent.title }} />
+            )}
+
+            {leftContent && leftContent.description && (
+              <div
+                className={cn('markdown-body', leftContent.title ? 'mt-10' : '')}
+                dangerouslySetInnerHTML={{ __html: leftContent.description }}
+              />
+            )}
+          </div>
+        )}
+
+        {hasCenterContent && (
+          <div className="flex mx-auto md:pr-0 md:w-full">
+            {centerContent && centerContent.description && (
+              <div className={'markdown-body mt-10'} dangerouslySetInnerHTML={{ __html: centerContent.description }} />
+            )}
+          </div>
+        )}
+
+        {hubspot && hasLeftContent && (
+          <div className={'z-10 relative md:w-full'}>
+            <HubSpotForm
+              className={'p-8 w-128 sm:w-auto sticky'}
+              portalId={hubspot.portalId}
+              formId={hubspot.formId}
+              style={{ top: 100 }}
+            />
+          </div>
+        )}
+
+        {hubspot && !hasLeftContent && !hasCenterContent && (
+          <div className={'flex-1 -mt-40'}>
+            <HubSpotForm
+              className={'p-8 sticky'}
+              portalId={hubspot.portalId}
+              formId={hubspot.formId}
+              style={{ top: 100 }}
+            />
+          </div>
+        )}
+      </Container>
+
+      <section />
+
+      <Testimonials {...testimonials} />
 
       <Collage id="customers" {...collage} />
+
+      {actionBar && <ActionBar className="my-24" {...actionBar} />}
+
+      {relatedPages && relatedPages.length ? <RelatedPages pages={relatedPages} /> : null}
     </Layout>
   );
 };
 
-export default withRouteData(DemoForm);
+export default withRouteData(Form);

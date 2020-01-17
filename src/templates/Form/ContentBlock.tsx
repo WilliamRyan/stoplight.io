@@ -1,7 +1,5 @@
 import cn from 'classnames';
-import { sign } from 'crypto';
 import * as React from 'react';
-import { withRouteData } from 'react-static';
 
 export interface IContentBlock {
   className?: string;
