@@ -58,4 +58,4 @@ Stoplight’s mission is to enable all stakeholders working with APIs to be more
 
 ---
 
-**_[Photo by Gavin Whitner](https://www.flickr.com/photos/156466858@N02/49398518677/)_**
+[**_Photo by Gavin Whitner - See More on Flickr_**](https://www.flickr.com/photos/156466858@N02/49398518677/)
