@@ -55,6 +55,7 @@ export const DemoFormCenter: React.FunctionComponent<IDemoFormCenter> = ({ hero,
             {testimonials &&
               testimonials.testimonials.map((testimonial, index) => (
                 <Testimonial
+                  key={index}
                   image={testimonial.image}
                   author={testimonial.author}
                   company={testimonial.company}

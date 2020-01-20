@@ -101,9 +101,9 @@ export async function getRoutes() {
     ...createRoutes('src/templates/Subpage', caseStudies, allPages, caseStudyProps),
     ...createRoutes('src/templates/Subpage', other, allPages),
     // ...createRoutes('src/templates/Form', forms, allPages),
-    // ...createRoutes('src/templates/DemoFormLeft', forms, allPages),
+    ...createRoutes('src/templates/DemoFormLeft', forms, allPages),
     // ...createRoutes('src/templates/DemoFormRight', forms, allPages),
-    ...createRoutes('src/templates/DemoFormCenter', forms, allPages),
+    // ...createRoutes('src/templates/DemoFormCenter', forms, allPages),
   ];
 
   return routes;
