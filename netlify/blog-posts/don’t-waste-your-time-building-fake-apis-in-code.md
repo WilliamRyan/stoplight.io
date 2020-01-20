@@ -98,7 +98,7 @@ public class MyResource {
 
 In this example, which you can see the full [details from here](https://jersey.github.io/documentation/latest/getting-started.html#new-project-structure), the API will return plain text. Want to return JSON? Well, unfortunately, even more setup is required.
 
-<div class="convertful-25567"></div>
+<div class="convertful-26074"></div>
 
 ## Build a Fake API in PHP
 

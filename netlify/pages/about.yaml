@@ -67,6 +67,9 @@ team:
     enabled: true
     text: Want to join the team? We're hiring!
   members:
+    - image: /images/alsaffar_feras.jpeg
+      name: Feras AlSaffar
+      role: Growth Engineer
     - image: /images/bachi-collin-1-.jpg
       name: Collin Bachi
       role: Devops Engineer
@@ -82,6 +85,9 @@ team:
     - image: /images/deborah-garnel-headshot.jpg
       name: Deborah Garnel
       role: SDET
+    - image: /images/gatica_headshot.jpg
+      name: Brandon Gatica
+      role: Business Operations Intern
     - image: /images/hilton_headshot.png
       name: William Hilton
       role: Software Engineer
@@ -114,6 +120,9 @@ team:
       role: Sales Engineer
     - image: /images/pytleski_headshot.png
       name: Thomas Pytleski
+      role: Software Engineer
+    - image: /images/johnrazmus.jpg
+      name: John 'JR' Razmus
       role: Software Engineer
     - image: /images/dave-headshot.jpg
       name: Dave Roberts

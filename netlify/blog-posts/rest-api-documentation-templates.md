@@ -69,6 +69,8 @@ While not required, you should consider whether your API templates can include t
 
 These various requirements of great documentation can be overwhelming, especially when you’re trying to quickly communicate what’s possible to API consumers. As you continue to build the API, it’s even harder to keep the documentation updated with what’s new. Wherever possible, look to automate as much of your API documentation as is reasonable. In the next section, we’ll look at methods to generate complete API references.
 
+<div class="convertful-26074"></div>
+
 ## Generate API Documentation
 
 Now that you have an idea of what should be included in your documentation, it’s time to create it. While you can write it by hand, it is less than ideal. Plus, with the same amount effort put into generating your API reference, you can create other benefits for your engineering team and organization at large.

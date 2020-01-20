@@ -90,6 +90,8 @@ That’s all well and good, but what about the downsides to unit testing APIs? H
 - Similarly, unit tests can be difficult to maintain over time as API behavior changes. If you have hundreds of tests for a specific endpoint, and the endpoint is refactored into two endpoints, you now have to comb through every test (or write new ones) to match the new behavior.
 - While it’s great that unit tests are able to verify the fundamental building blocks of your API, what happens if two ‘units’ that are correct when tested independently, introduce errant behavior when combined? If you are only relying on unit tests to verify your API, these kinds of subtle issues may allow bugs and other gaps in logic to slip through your test cases.
 
+<div class="convertful-26074"></div>
+
 ### Larger Testing Story
 
 The next question is when do you use unit tests, and, maybe more importantly, how do they fit into the larger testing story? Should they only be used for testing in development, or do they provide benefits in other environments? Can they be used in tandem with a mock service?
