@@ -56,3 +56,7 @@ The release of Stoplight Studio comes on the heels of Stoplight’s [$3.25 milli
 
 Stoplight’s mission is to enable all stakeholders working with APIs to be more productive. Stoplight’s API Design Management software platform provides a suite of products that cover the entire preproduction API life cycle. Stoplight’s customers include companies in the Fortune 1000. Stoplight’s products provide a means for design-first microservice application development. Developing good design-first practices will minimize future costs, speed up your time to market and lead to more consistent, higher quality microservice and IoT applications. You can learn more about Stoplight and Stoplight Studio at https://stoplight.io or connect with Stoplight on Twitter @Stoplightio.
 
+---
+<a style="background-color:#ff0080;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:16px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://www.flickr.com/photos/156466858@N02/" title="See Photos from Gavin Whitner"><span style="display:inline-block;padding:2px 3px"></i>Photo by Gavin Whitner - See More on Flickr</span></a>
+
+<!-- **_[Photo by Gavin Whitner](https://www.flickr.com/photos/156466858@N02/49398518677/)_**   -->
